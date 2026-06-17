@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BUT 1 — Anatole Lodier</title>
+<meta name="description" content="Portfolio de compétences d'Anatole Lodier, BUT3 Techniques de Commercialisation, parcours Marketing Digital, E-Business & Entrepreneuriat (MDEBE), IUT de Toulon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>/* ============================================================
+   Portfolio Anatole Lodier — BUT3 TC / MDEBE
+   Direction : éditorial "dossier de compétences"
+   ============================================================ */
+:root{
+  --ink:#101626;          /* bleu nuit profond */
+  --ink-soft:#37415a;
+  --paper:#f7f5f0;        /* papier chaud */
+  --paper-2:#efece3;
+  --line:#d9d4c7;
+  --blue:#2f4cff;         /* signal numérique */
+  --blue-deep:#1d2bb3;
+  --amber:#ff8a3d;        /* accent niveau */
+  --green:#15795f;
+  --white:#ffffff;
+  --shadow:0 1px 0 rgba(16,22,38,.04), 0 18px 40px -28px rgba(16,22,38,.45);
+  --radius:14px;
+  --maxw:1120px;
+  --serif:"Source Serif 4", Georgia, serif;
+  --disp:"Bricolage Grotesque", system-ui, sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, monospace;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--serif);font-size:18px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+}
+a{color:var(--blue-deep);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--blue)}
+img{max-width:100%}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+/* ---------- Eyebrow / labels ---------- */
+.eyebrow{
+  font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--ink-soft);margin:0 0 .6rem;
+}
+.mono{font-family:var(--mono)}
+
+/* ---------- Header / nav ---------- */
+.site-header{
+  position:sticky;top:0;z-index:50;background:rgba(247,245,240,.86);
+  backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{font-family:var(--disp);font-weight:800;font-size:1.12rem;letter-spacing:-.02em;
+  color:var(--ink);text-decoration:none;display:flex;align-items:baseline;gap:.5rem}
+.brand .tag{font-family:var(--mono);font-size:.62rem;letter-spacing:.12em;color:var(--blue);
+  border:1px solid var(--blue);border-radius:20px;padding:.15rem .5rem;text-transform:uppercase}
+.nav-links{display:flex;gap:.35rem;align-items:center;list-style:none;margin:0;padding:0}
+.nav-links a{
+  font-family:var(--disp);font-weight:600;font-size:.92rem;color:var(--ink-soft);
+  text-decoration:none;padding:.5rem .7rem;border-radius:9px;transition:.18s;
+}
+.nav-links a:hover{background:var(--paper-2);color:var(--ink)}
+.nav-links a.active{color:var(--ink);background:var(--white);box-shadow:var(--shadow)}
+.nav-toggle{display:none;background:none;border:1px solid var(--line);border-radius:9px;
+  width:44px;height:40px;cursor:pointer;align-items:center;justify-content:center}
+.nav-toggle span,.nav-toggle span::before,.nav-toggle span::after{
+  content:"";display:block;width:20px;height:2px;background:var(--ink);position:relative;transition:.2s}
+.nav-toggle span::before{position:absolute;top:-6px}
+.nav-toggle span::after{position:absolute;top:6px}
+
+@media(max-width:880px){
+  .nav-toggle{display:inline-flex}
+  .nav-links{
+    position:absolute;top:68px;left:0;right:0;flex-direction:column;align-items:stretch;
+    gap:0;background:var(--paper);border-bottom:1px solid var(--line);
+    padding:8px 16px 16px;transform:translateY(-12px);opacity:0;pointer-events:none;transition:.2s}
+  .nav-links.open{transform:none;opacity:1;pointer-events:auto}
+  .nav-links a{padding:.8rem .6rem;border-radius:9px}
+}
+
+/* ---------- Hero ---------- */
+.hero{padding:84px 0 64px;position:relative;overflow:hidden}
+.hero .wrap{position:relative;z-index:2}
+.hero h1{
+  font-family:var(--disp);font-weight:800;letter-spacing:-.03em;line-height:1.02;
+  font-size:clamp(2.6rem,7vw,5.2rem);margin:.2rem 0 .4rem;color:var(--ink)}
+.hero h1 .accent{color:var(--blue)}
+.hero .lede{font-size:clamp(1.05rem,2.2vw,1.35rem);max-width:46ch;color:var(--ink-soft);margin:.6rem 0 1.8rem}
+.hero-meta{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2rem}
+.chip{font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;background:var(--white);
+  border:1px solid var(--line);border-radius:30px;padding:.4rem .8rem;color:var(--ink-soft)}
+.hero-grid{position:absolute;inset:0;z-index:1;opacity:.5;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:44px 44px;-webkit-mask-image:radial-gradient(ellipse 80% 60% at 70% 20%,#000,transparent 75%);
+          mask-image:radial-gradient(ellipse 80% 60% at 70% 20%,#000,transparent 75%)}
+.btns{display:flex;flex-wrap:wrap;gap:.8rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--disp);font-weight:600;
+  font-size:.98rem;text-decoration:none;padding:.8rem 1.3rem;border-radius:11px;transition:.18s;border:1px solid transparent}
+.btn-primary{background:var(--ink);color:var(--paper)}
+.btn-primary:hover{background:var(--blue);color:#fff}
+.btn-ghost{background:transparent;border-color:var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--ink);background:var(--white)}
+
+/* ---------- Section ---------- */
+.section{padding:64px 0}
+.section-alt{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.section-dark{background:var(--ink);color:var(--paper-2)}
+.section-dark .eyebrow{color:#9aa6c7}
+.section-dark h2,.section-dark h3{color:#fff}
+.section-head{max-width:60ch;margin-bottom:2.2rem}
+.section-head h2{font-family:var(--disp);font-weight:800;letter-spacing:-.02em;
+  font-size:clamp(1.7rem,4vw,2.6rem);line-height:1.05;margin:.1rem 0 .5rem}
+.section-head p{color:var(--ink-soft);margin:0}
+.section-dark .section-head p{color:#b9c2dc}
+
+/* ---------- Year cards (home) ---------- */
+.years{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:880px){.years{grid-template-columns:1fr}}
+.year-card{display:block;text-decoration:none;color:inherit;background:var(--white);
+  border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);transition:.2s;position:relative}
+.year-card:hover{transform:translateY(-4px);border-color:var(--blue)}
+.year-card .num{font-family:var(--disp);font-weight:800;font-size:3.2rem;line-height:1;color:var(--blue)}
+.year-card h3{font-family:var(--disp);font-size:1.25rem;margin:.6rem 0 .3rem;color:var(--ink)}
+.year-card p{font-size:.95rem;color:var(--ink-soft);margin:0 0 1rem}
+.year-card .go{font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;color:var(--blue-deep);text-transform:uppercase}
+
+/* ---------- Competence block ---------- */
+.comp{margin:0 0 18px;background:var(--white);border:1px solid var(--line);
+  border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.comp-head{padding:24px 26px;border-bottom:1px solid var(--line);display:flex;
+  justify-content:space-between;align-items:flex-start;gap:18px;flex-wrap:wrap}
+.comp-head .titles h3{font-family:var(--disp);font-weight:800;font-size:1.35rem;margin:.2rem 0 .25rem;letter-spacing:-.01em}
+.comp-head .titles .bandeau{color:var(--ink-soft);font-size:.98rem;margin:0;max-width:62ch}
+.level{display:flex;align-items:center;gap:.5rem;flex:none}
+.level-dots{display:flex;gap:5px}
+.dot{width:11px;height:11px;border-radius:50%;border:1.5px solid var(--blue)}
+.dot.on{background:var(--blue)}
+.level-label{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;color:var(--ink-soft);text-transform:uppercase}
+.tag-type{font-family:var(--mono);font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;
+  padding:.25rem .55rem;border-radius:20px;border:1px solid var(--line);color:var(--ink-soft);background:var(--paper)}
+.tag-type.spe{color:var(--blue-deep);border-color:var(--blue);background:#eef0ff}
+
+/* ---------- AC accordion (details/summary) ---------- */
+.ac{border-top:1px solid var(--line)}
+.ac:first-child{border-top:none}
+.ac summary{list-style:none;cursor:pointer;padding:18px 26px;display:flex;gap:16px;align-items:flex-start;
+  transition:background .15s}
+.ac summary::-webkit-details-marker{display:none}
+.ac summary:hover{background:var(--paper)}
+.ac .ac-no{font-family:var(--mono);font-size:.8rem;color:var(--blue);font-weight:700;padding-top:.15rem;flex:none}
+.ac .ac-t{flex:1}
+.ac .ac-t .t{font-family:var(--disp);font-weight:600;font-size:1.04rem;color:var(--ink);line-height:1.3}
+.ac .ac-t .s{font-size:.9rem;color:var(--ink-soft);margin-top:.15rem}
+.ac .chev{flex:none;width:22px;height:22px;border-radius:6px;border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;transition:.2s;color:var(--ink-soft);font-size:.8rem}
+.ac[open] .chev{transform:rotate(90deg);border-color:var(--blue);color:var(--blue)}
+.ac-body{padding:4px 26px 26px;border-top:1px dashed var(--line);margin-top:-1px}
+.ac-body .bloc{margin-top:18px}
+.ac-body .bloc h4{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--blue-deep);margin:0 0 .4rem}
+.ac-body .bloc p{margin:0 0 .5rem}
+.ac-body .bloc .bullet{margin:.15rem 0 .15rem;padding-left:1.1rem;position:relative;color:var(--ink-soft)}
+.ac-body .bloc .bullet::before{content:"›";position:absolute;left:0;color:var(--blue)}
+.trace-links{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:18px}
+.trace-link{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--disp);font-weight:600;
+  font-size:.88rem;text-decoration:none;background:var(--ink);color:var(--paper);padding:.55rem .9rem;border-radius:9px;transition:.18s}
+.trace-link:hover{background:var(--blue);color:#fff}
+.trace-link.empty{background:var(--paper-2);color:var(--ink-soft);border:1px dashed var(--line)}
+
+/* ---------- Gabarit (BUT3) ---------- */
+.todo{display:inline-block;font-family:var(--mono);font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--amber);border:1px solid var(--amber);border-radius:20px;padding:.18rem .5rem;margin-left:.5rem;vertical-align:middle}
+.gabarit{background:#fffaf4;border:1px solid #f3dcc4;border-radius:10px;padding:16px 18px;margin-top:16px}
+.gabarit h4{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:#b5611e;margin:.2rem 0 .15rem}
+.gabarit p{margin:0 0 .9rem;color:var(--ink-soft);font-size:.95rem}
+.gabarit p:last-child{margin-bottom:0}
+
+/* ---------- Stage / generic card ---------- */
+.card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px;box-shadow:var(--shadow)}
+.card h3{font-family:var(--disp);font-weight:800;font-size:1.3rem;margin:.1rem 0 .3rem}
+.card .meta{font-family:var(--mono);font-size:.76rem;letter-spacing:.06em;color:var(--blue-deep);text-transform:uppercase;margin-bottom:1rem}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:760px){.grid-2{grid-template-columns:1fr}}
+
+/* ---------- Skills ---------- */
+.skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:880px){.skill-grid{grid-template-columns:1fr}}
+.skill{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:20px}
+.skill h4{font-family:var(--disp);font-weight:700;font-size:1.05rem;margin:0 0 .35rem;color:var(--ink)}
+.skill p{margin:0;font-size:.92rem;color:var(--ink-soft)}
+.htable{width:100%;border-collapse:collapse;background:var(--white);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.htable th,.htable td{text-align:left;padding:14px 16px;border-bottom:1px solid var(--line);vertical-align:top;font-size:.94rem}
+.htable th{font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);background:var(--paper)}
+.htable td:first-child{font-family:var(--disp);font-weight:600;color:var(--ink)}
+.langs{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:16px}
+.lang{font-family:var(--mono);font-size:.82rem;background:var(--white);border:1px solid var(--line);
+  border-radius:30px;padding:.4rem .85rem}
+.lang b{color:var(--blue-deep)}
+
+/* ---------- Progression (bilan) ---------- */
+.prog{display:grid;gap:14px}
+.prog-row{display:grid;grid-template-columns:170px 1fr;gap:18px;align-items:center;
+  background:var(--white);border:1px solid var(--line);border-radius:12px;padding:16px 20px}
+@media(max-width:680px){.prog-row{grid-template-columns:1fr}}
+.prog-row .dom{font-family:var(--disp);font-weight:700;font-size:1.05rem}
+.prog-steps{display:flex;align-items:center;gap:0}
+.step{flex:1;display:flex;align-items:center}
+.step .b{font-family:var(--mono);font-size:.72rem;text-align:center;padding:.45rem .3rem;border-radius:8px;
+  border:1px solid var(--line);background:var(--paper);width:100%;color:var(--ink-soft)}
+.step .b.has{background:var(--blue);color:#fff;border-color:var(--blue)}
+.step .b.spe{background:var(--ink);color:#fff;border-color:var(--ink)}
+.step .arr{color:var(--line);padding:0 .4rem;flex:none}
+
+/* ---------- Footer ---------- */
+.site-footer{background:var(--ink);color:#aeb7d2;padding:46px 0;font-size:.92rem}
+.site-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
+.site-footer a{color:#cdd4e8}
+.site-footer .brand{color:#fff}
+.foot-nav{display:flex;flex-wrap:wrap;gap:1rem;list-style:none;margin:0;padding:0;font-family:var(--disp);font-size:.9rem}
+
+/* ---------- Contact ---------- */
+.contact-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:24px}
+@media(max-width:760px){.contact-grid{grid-template-columns:1fr}}
+.cline{display:flex;gap:.7rem;align-items:baseline;margin:.2rem 0;font-size:1.05rem}
+.cline .k{font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);min-width:90px}
+
+/* ---------- intro paragraph for comp pages ---------- */
+.page-intro{max-width:64ch;font-size:1.1rem;color:var(--ink-soft);margin:0 0 2.4rem}
+
+/* ---------- Stage BUT3 : KPI + problématique ---------- */
+.problematique{background:var(--paper);border-left:3px solid var(--blue);border-radius:0 10px 10px 0;
+  padding:14px 18px;margin:16px 0;font-size:1.02rem;color:var(--ink)}
+.pq-label{display:block;font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--blue-deep);margin-bottom:.35rem}
+.kpi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0 8px}
+@media(max-width:680px){.kpi-grid{grid-template-columns:1fr 1fr}}
+.kpi{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.kpi-v{font-family:var(--disp);font-weight:800;font-size:1.4rem;color:var(--blue-deep);line-height:1.1}
+.kpi-l{font-family:var(--mono);font-size:.68rem;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-soft);margin-top:.3rem}
+
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px;border-radius:4px}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Anatole Lodier <span class="tag">BUT3 · TC</span></a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span></button>
+    <ul class="nav-links"><li><a href="index.html">Accueil</a></li><li><a href="but1.html" class="active">BUT 1</a></li><li><a href="but2.html">BUT 2</a></li><li><a href="but3.html">BUT 3</a></li><li><a href="bilan.html">Bilan &amp; projet</a></li><li><a href="contact.html">Contact</a></li></ul>
+  </div>
+</header>
+<main>
+
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">Année 1 · BUT 1</p>
+    <h1 style="font-family:var(--disp);font-weight:800;letter-spacing:-.02em;font-size:clamp(2rem,5vw,3.2rem);margin:.1rem 0 .8rem">Compétences BUT 1</h1>
+    <p class="page-intro">Le socle du diplôme : lire un marché, bâtir une offre simple, communiquer et vendre. Quatre apprentissages critiques par compétence, illustrés par des SAÉ, des TP et un premier stage.</p>
+    <section class="comp">
+  <div class="comp-head">
+    <div class="titles"><p class="eyebrow">Compétence · Marketing</p><h3>Marketing</h3><p class="bandeau">Construire une offre commerciale simple</p></div>
+    <div style="display:flex;flex-direction:column;align-items:flex-end;gap:.6rem"><div class="level"><span class="level-label">Niveau</span><div class="level-dots"><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div></div>
+  </div>
+  <details class="ac">
+  <summary><span class="ac-no">AC01</span>
+    <span class="ac-t"><span class="t">Analyser l’environnement d’une entreprise en repérant et appréciant les sources d’informations</span><div class="s">Analyse SWOT — Adidas</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Dans un TD de marketing, analyse du micro-environnement de l’entreprise Adidas via une matrice SWOT (forces, faiblesses, opportunités, menaces).</p></div><div class="bloc"><h4>Démarche</h4><p>Identification structurée des éléments internes influençant la performance, puis croisement avec les opportunités et menaces du marché pour dégager des axes d’amélioration.</p></div><div class="bloc"><h4>Bilan</h4><p>Exercice formateur pour maîtriser un outil utile au diagnostic interne comme à la veille concurrentielle. Principale difficulté : obtenir des données fiables et à jour et rester objectif sur les forces et faiblesses. Compétence acquise au niveau attendu, à consolider sur des cas réels.</p></div><div class="trace-links"><a class="trace-link" href="https://e4796991-db55-4865-a85e-66b89979aa3b.filesusr.com/ugd/d41349_1354012537154d018ee9eebd19076ae2.pdf" target="_blank" rel="noopener">↗ SWOT Adidas (PDF)</a></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC02</span>
+    <span class="ac-t"><span class="t">Mettre en œuvre une étude de marché dans un environnement simple</span><div class="s">Analyse PESTEL — marché des jeux de société</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>SAÉ marketing : analyse complète de l’environnement externe du marché des jeux de société, première étape de la démarche marketing.</p></div><div class="bloc"><h4>Démarche</h4><p>Construction d’un PESTEL (politique, économique, socioculturel, technologique, environnemental, légal) pour repérer opportunités et menaces et anticiper les évolutions du marché.</p></div><div class="bloc"><h4>Bilan</h4><p>Le vrai défi a été de sélectionner des sources fiables et récentes pour un PESTEL cohérent avec les tendances actuelles. Après plusieurs itérations, je suis désormais plus à l’aise pour apprécier la fiabilité des sources et la pertinence des informations à retenir.</p></div><div class="trace-links"><a class="trace-link" href="https://e4796991-db55-4865-a85e-66b89979aa3b.filesusr.com/ugd/d41349_a87d3034b2e24466ac496b6643c532b2.pdf" target="_blank" rel="noopener">↗ PESTEL (PDF)</a></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC03</span>
+    <span class="ac-t"><span class="t">Choisir une cible et un positionnement en fonction de la segmentation du marché</span><div class="s">Étude de marché — relance « Tang »</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>SAÉ marketing (S2) : recommercialiser une marque de notre choix. Choix d’une poudre lyophilisée aromatisée aux fruits, avec une offre définie de A à Z.</p></div><div class="bloc"><h4>Démarche</h4><p>Choix de la cible selon le concept, segmentation de la population sur des critères pertinents pour établir un profil-type, puis détermination du positionnement parmi les gammes existantes.</p></div><div class="bloc"><h4>Bilan</h4><p>La difficulté a été de se mettre à la place du consommateur pour tester l’attrait du produit sur plusieurs profils. Ces choix ont structuré toute la création de la marque, de la composition au design du packaging.</p></div><div class="trace-links"><a class="trace-link" href="https://e4796991-db55-4865-a85e-66b89979aa3b.filesusr.com/ugd/d41349_269d165b750e4a828f1b11b39db2cb3f.pdf" target="_blank" rel="noopener">↗ Infographie Tang (PDF)</a></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC04</span>
+    <span class="ac-t"><span class="t">Concevoir une offre cohérente et éthique en termes de produit, prix, distribution et communication</span><div class="s">Marketing-mix — « Tang »</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Suite du projet de relance de marque : définition du concept, du packaging, de la politique de distribution et de l’identité visuelle, avec un premier support de communication.</p></div><div class="bloc"><h4>Démarche</h4><p>Tous les éléments du mix ont été travaillés (hors prix) en recherchant la cohérence entre chaque levier : segment produit, stratégie marketing, distribution, communication.</p></div><div class="bloc"><h4>Bilan</h4><p>La difficulté centrale : équilibrer intérêts commerciaux, attentes des consommateurs et considérations éthiques de la marque, tout en gardant un mix cohérent susceptible de réussir sur le marché.</p></div><div class="trace-links"><a class="trace-link" href="https://e4796991-db55-4865-a85e-66b89979aa3b.filesusr.com/ugd/d41349_c44691c92d3948e49f64eac2fd6af3c8.pdf" target="_blank" rel="noopener">↗ Dossier technique Tang (PDF)</a></div></div>
+</details>
+</section><section class="comp">
+  <div class="comp-head">
+    <div class="titles"><p class="eyebrow">Compétence · Communication</p><h3>Communication</h3><p class="bandeau">Mettre en place une communication commerciale simple</p></div>
+    <div style="display:flex;flex-direction:column;align-items:flex-end;gap:.6rem"><div class="level"><span class="level-label">Niveau</span><div class="level-dots"><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div></div>
+  </div>
+  <details class="ac">
+  <summary><span class="ac-no">AC01</span>
+    <span class="ac-t"><span class="t">Identifier les cibles et objectifs de communication en tenant compte de la cohérence du mix</span><div class="s">Stratégie de communication — EcoFit</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Fondamentaux de la communication commerciale : élaborer la stratégie de communication d’une entreprise fictive créée pour l’occasion, sur le marché des salles de sport.</p></div><div class="bloc"><h4>Démarche</h4><p>Après définition du nom, du secteur et du concept : analyse rapide du marché, problématique, objectifs de communication, cible, message, moyens et budget.</p></div><div class="bloc"><h4>Bilan</h4><p>L’enjeu était la cohérence entre tous ces éléments et le bon choix des canaux selon objectifs, positionnement et clientèle. Un mauvais choix de canaux aurait limité l’impact : d’où l’importance d’une stratégie intégrée.</p></div><div class="trace-links"><a class="trace-link" href="https://e4796991-db55-4865-a85e-66b89979aa3b.filesusr.com/ugd/d41349_e2897797a5354c6ba72e9c9935fb7813.pdf" target="_blank" rel="noopener">↗ Mix EcoFit (PDF)</a></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC02</span>
+    <span class="ac-t"><span class="t">Analyser de manière pertinente les moyens de communication commerciale (médias, hors-médias, médias sociaux)</span><div class="s">Audit &amp; benchmark — ReCycle</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>SAÉ communication : analyser la stratégie de communication de notre marque ReCycle (médias, hors-médias, médias sociaux) et en dégager forces et faiblesses.</p></div><div class="bloc"><h4>Démarche</h4><p>Collecte d’informations en se plaçant en consommateur (site, réseaux sociaux, articles), puis benchmark face à deux concurrents (Cycles Up, Acolyte) pour comparer performances et résultats.</p></div><div class="bloc"><h4>Bilan</h4><p>La fiabilité des sources a été une préoccupation majeure. Le benchmark s’est révélé précieux pour situer une entreprise sur son marché et identifier des pistes d’amélioration pour de futures campagnes.</p></div><div class="trace-links"><a class="trace-link" href="https://e4796991-db55-4865-a85e-66b89979aa3b.filesusr.com/ugd/d41349_58903649e03a497ab4d43ba73c250452.pdf" target="_blank" rel="noopener">↗ ReCycle (PDF)</a></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC03</span>
+    <span class="ac-t"><span class="t">Élaborer des supports simples (imprimé sans adresse, affiches, dossier de sponsoring…)</span><div class="s">Affiche publicitaire — « Tang »</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>SAÉ communication : créer une affiche publicitaire originale pour notre produit, en respectant les droits d’utilisation.</p></div><div class="bloc"><h4>Démarche</h4><p>Affiche pensée pour être originale, attrayante et cohérente avec le positionnement, en détournant une référence culturelle connue réinterprétée avec nos couleurs et nos codes. Présentation orale sous forme de stand devant un jury.</p></div><div class="bloc"><h4>Bilan</h4><p>L’exercice a demandé d’articuler créativité, attractivité et cohérence de marque — une vraie mise en pratique de la conception de supports.</p></div><div class="trace-links"><a class="trace-link" href="https://e4796991-db55-4865-a85e-66b89979aa3b.filesusr.com/ugd/d41349_a8166c6d26e44c32ae34f210bceef897.pdf" target="_blank" rel="noopener">↗ Affiche (PDF)</a><a class="trace-link" href="https://e4796991-db55-4865-a85e-66b89979aa3b.filesusr.com/ugd/d41349_fb6fb28789df46da9160acb2bed6b26d.pdf" target="_blank" rel="noopener">↗ Dossier technique (PDF)</a></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC04</span>
+    <span class="ac-t"><span class="t">Analyser les indicateurs post-campagne (impact, efficacité)</span><div class="s">Apprentissage critique non encore tracé en BUT1</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Note</h4><p>Aucune trace produite à ce stade du BUT1. Cet apprentissage critique est repris et approfondi en BUT2 (indicateurs de choix des supports) puis en BUT3 (indicateurs de performance digitale).</p></div></div>
+</details>
+</section><section class="comp">
+  <div class="comp-head">
+    <div class="titles"><p class="eyebrow">Compétence · Vente</p><h3>Vente</h3><p class="bandeau">Vendre une offre commerciale simple</p></div>
+    <div style="display:flex;flex-direction:column;align-items:flex-end;gap:.6rem"><div class="level"><span class="level-label">Niveau</span><div class="level-dots"><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div></div>
+  </div>
+  <details class="ac">
+  <summary><span class="ac-no">AC01</span>
+    <span class="ac-t"><span class="t">Préparer un plan de découverte qui permette de profiler le client et de découvrir ses besoins</span><div class="s">Apprentissage critique à tracer</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Note</h4><p>Compétence travaillée en cours mais non illustrée par une trace personnelle en BUT1. Approfondie ensuite dans les jeux de rôle et négociations du BUT2.</p></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC02</span>
+    <span class="ac-t"><span class="t">Concevoir un argumentaire de vente adapté aux besoins du client</span><div class="s">Argumentaire — recherche d’alternance</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>SAÉ Vente : construire des argumentaires pour préparer nos entretiens, dont un dédié à l’approche des entreprises pour l’alternance et les stages.</p></div><div class="bloc"><h4>Démarche</h4><p>Structuration des idées, anticipation des objections, mise en avant des avantages et bénéfices, avec des variantes de stratégie selon les besoins et motivations de l’interlocuteur.</p></div><div class="bloc"><h4>Bilan</h4><p>Un argumentaire préparé renforce la confiance et la capacité à débloquer une situation. Outil directement réutilisé dans ma propre démarche de recherche.</p></div><div class="trace-links"><a class="trace-link" href="https://e4796991-db55-4865-a85e-66b89979aa3b.filesusr.com/ugd/d41349_edf8536e2d9e4d0aa49388c1ff69c6cd.pdf" target="_blank" rel="noopener">↗ Argumentaire (PDF)</a></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC03</span>
+    <span class="ac-t"><span class="t">Concevoir des outils d’aide à la vente (OAV) efficaces</span><div class="s">Mailing — MailChimp (méthode AIDA)</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>TP de communication : concevoir un mailing comme outil d’aide à la vente, avec liberté sur la forme et le fond mais obligation d’appliquer les techniques de prospection.</p></div><div class="bloc"><h4>Démarche</h4><p>Construction du message selon la méthode AIDA (Attention, Intérêt, Désir, Action), en équilibrant texte et visuels pour un contenu percutant et incitant à l’action.</p></div><div class="bloc"><h4>Bilan</h4><p>La difficulté : capter l’attention dès l’ouverture et dérouler la mécanique AIDA jusqu’à un appel à l’action concret (visiter le site, nous contacter).</p></div><div class="trace-links"><a class="trace-link" href="https://e4796991-db55-4865-a85e-66b89979aa3b.filesusr.com/ugd/d41349_dc69a8ebd877485890f4e9b1674d55a2.pdf" target="_blank" rel="noopener">↗ Mailing (PDF)</a></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC04</span>
+    <span class="ac-t"><span class="t">Évaluer la performance commerciale au moyen d’indicateurs</span><div class="s">Tableaux de suivi — stage de vente</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Fondamentaux de la vente (S1) : calcul d’indicateurs de performance commerciale, notamment en prospection.</p></div><div class="bloc"><h4>Démarche</h4><p>Mise en pratique pendant mon stage : sur quatre semaines, réalisation de tableaux de suivi de ma progression en vente.</p></div><div class="bloc"><h4>Bilan</h4><p>Ce suivi a permis d’identifier mes points faibles, de définir des axes d’amélioration et d’ajuster mes stratégies pour atteindre mes objectifs plus efficacement.</p></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC05</span>
+    <span class="ac-t"><span class="t">Recourir aux techniques adaptées à la démarche de prospection</span><div class="s">Fichiers clients &amp; phoning</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>SAÉ Vente (S1) : constituer des fichiers clients et réaliser du démarchage téléphonique en groupe.</p></div><div class="bloc"><h4>Démarche</h4><p>Création d’un dossier Excel regroupant les informations nécessaires, coordination d’équipe pour compiler et analyser les données de prospects.</p></div><div class="bloc"><h4>Bilan</h4><p>Projet formateur en organisation, gestion de projet et collaboration ; il a aussi renforcé mes capacités de communication et de négociation.</p></div><div class="trace-links"><a class="trace-link" href="https://e4796991-db55-4865-a85e-66b89979aa3b.filesusr.com/ugd/d41349_16f3510d6f2f484d97fbc533ee46f22f.xlsx?dn=5%20vente.xlsx" target="_blank" rel="noopener">↗ Fichiers clients (Excel)</a></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC06</span>
+    <span class="ac-t"><span class="t">Recourir aux codes d’expression spécifiques et professionnels</span><div class="s">Vidéo de rapport de stage</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Réalisation d’une vidéo accompagnant mon rapport de stage, décrivant le déroulement et les compétences acquises.</p></div><div class="bloc"><h4>Bilan</h4><p>Mobiliser les codes d’expression propres au milieu professionnel renforce la crédibilité et la clarté du message — une compétence transversale utile à l’oral comme à l’écrit.</p></div></div>
+</details>
+</section>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Stage</p><h2>Expérience en entreprise</h2></div>
+    <div class="card"><h3>Stage de 1ʳᵉ année — JOTT</h3><div class="meta">Vente • prêt-à-porter • ~1 mois (début S2) • Marseille</div><p>Intégration de la maison JOTT, marque marseillaise de prêt-à-porter connue pour ses doudounes. Mission : conseiller la clientèle et vendre, tout en portant les valeurs de la marque.</p><p>Participation à l’entretien du magasin, au réassortiment, à la gestion des stocks et à l’optimisation de l’expérience client.</p><p>Ce stage m’a fait mesurer concrètement le rôle de technico-commercial : polyvalence, réactivité, prise de décision, connaissance produit et communication, avec les clients comme avec l’équipe.</p><div class="trace-links"><a class="trace-link" href="https://e4796991-db55-4865-a85e-66b89979aa3b.filesusr.com/ugd/d41349_c4f51d943608452ab8bcea0e6493dbe6.pdf" target="_blank" rel="noopener">↗ Rapport de stage (PDF)</a></div></div>
+  </div>
+</section>
+
+<section class="section section-alt" id="skills">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Soft skills</p><h2>Compétences comportementales</h2><p>Six compétences comportementales identifiées en croisant auto-analyse et regards extérieurs.</p></div>
+    <div class="skill-grid"><div class="skill"><h4>Résolution de problèmes</h4><p>Identifier, analyser et résoudre des situations complexes ou imprévues, penser de manière critique et décider en gérant les obstacles.</p></div><div class="skill"><h4>Communication</h4><p>Transmettre une information claire et adaptée, écouter activement, poser les bonnes questions et exprimer mes idées avec concision.</p></div><div class="skill"><h4>Gestion du temps</h4><p>Planifier, organiser et prioriser, fixer des objectifs et des échéances réalistes, respecter les délais et maximiser ma productivité.</p></div><div class="skill"><h4>Esprit d’entreprendre</h4><p>Repérer les opportunités, prendre des initiatives et agir de façon proactive, en assumant des risques calculés.</p></div><div class="skill"><h4>Curiosité</h4><p>Chercher activement de nouvelles connaissances et perspectives, apprendre en continu et m’adapter au changement.</p></div><div class="skill"><h4>Sens du collectif</h4><p>Travailler efficacement en équipe, contribuer positivement au groupe et cultiver un environnement de coopération.</p></div></div>
+    <div class="section-head" style="margin-top:3rem"><p class="eyebrow">Mad skills</p><h2>Ce qui me caractérise</h2><p>Des compétences plus personnelles qui façonnent qui je suis.</p></div>
+    <div class="skill-grid"><div class="skill"><h4>Batterie</h4><p>Pratique de la batterie pendant 6 ans.</p></div><div class="skill"><h4>Animation</h4><p>Animateur en colonie de vacances.</p></div></div>
+    <div class="section-head" style="margin-top:3rem"><p class="eyebrow">Hard skills</p><h2>Compétences techniques</h2><p>Compétences techniques acquises par l’expérience, notamment en télévente B2B et B2C.</p></div>
+    <table class="htable"><thead><tr><th>Domaine</th><th>Commercial pompe à chaleur</th><th>Téléprospecteur — Business France</th></tr></thead><tbody><tr><td>Connaissances</td><td>Pompes à chaleur, chaudières, climatisations ; limites techniques d’une installation ; aides de l’État.</td><td>Salons sectoriels ; dispositifs BPI et État d’accompagnement des entreprises à l’export.</td></tr><tr><td>Compétences techniques</td><td>Établir un fichier de prospection, appeler en amont et fixer des rendez-vous, déterminer l’éligibilité d’un système, relancer.</td><td>Aborder de grands interlocuteurs (PDG), gérer son temps selon les disponibilités, se coordonner (Conseillers International, BPI…).</td></tr><tr><td>Outils</td><td>Maîtrise d’un CRM privé.</td><td>Excel, Salesforce, Microsoft Teams, Exchange, Word.</td></tr></tbody></table>
+    <div class="langs"><span class="lang"><b>Anglais</b> · C1 (TOEIC)</span><span class="lang"><b>Italien</b> · B1</span><span class="lang"><b>Espagnol</b> · A2</span><span class="lang"><b>Russe</b> · A2</span></div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <div class="brand" style="font-family:var(--disp);font-weight:800;font-size:1.1rem">Anatole Lodier</div>
+      <div style="margin-top:.4rem">BUT Techniques de Commercialisation — Parcours MDEBE<br>IUT de Toulon · Campus de La Garde</div>
+    </div>
+    <ul class="foot-nav"><li><a href="index.html">Accueil</a></li><li><a href="but1.html">BUT 1</a></li><li><a href="but2.html">BUT 2</a></li><li><a href="but3.html">BUT 3</a></li><li><a href="bilan.html">Bilan &amp; projet</a></li><li><a href="contact.html">Contact</a></li></ul>
+  </div>
+</footer>
+<script>// Menu mobile
+(function(){
+  var t=document.querySelector('.nav-toggle'),l=document.querySelector('.nav-links');
+  if(t&&l){t.addEventListener('click',function(){
+    var o=l.classList.toggle('open');
+    t.setAttribute('aria-expanded',o?'true':'false');
+  });}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accueil — Anatole Lodier</title>
+<meta name="description" content="Portfolio de compétences d'Anatole Lodier, BUT3 Techniques de Commercialisation, parcours Marketing Digital, E-Business & Entrepreneuriat (MDEBE), IUT de Toulon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>/* ============================================================
+   Portfolio Anatole Lodier — BUT3 TC / MDEBE
+   Direction : éditorial "dossier de compétences"
+   ============================================================ */
+:root{
+  --ink:#101626;          /* bleu nuit profond */
+  --ink-soft:#37415a;
+  --paper:#f7f5f0;        /* papier chaud */
+  --paper-2:#efece3;
+  --line:#d9d4c7;
+  --blue:#2f4cff;         /* signal numérique */
+  --blue-deep:#1d2bb3;
+  --amber:#ff8a3d;        /* accent niveau */
+  --green:#15795f;
+  --white:#ffffff;
+  --shadow:0 1px 0 rgba(16,22,38,.04), 0 18px 40px -28px rgba(16,22,38,.45);
+  --radius:14px;
+  --maxw:1120px;
+  --serif:"Source Serif 4", Georgia, serif;
+  --disp:"Bricolage Grotesque", system-ui, sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, monospace;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--serif);font-size:18px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+}
+a{color:var(--blue-deep);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--blue)}
+img{max-width:100%}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+/* ---------- Eyebrow / labels ---------- */
+.eyebrow{
+  font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--ink-soft);margin:0 0 .6rem;
+}
+.mono{font-family:var(--mono)}
+
+/* ---------- Header / nav ---------- */
+.site-header{
+  position:sticky;top:0;z-index:50;background:rgba(247,245,240,.86);
+  backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{font-family:var(--disp);font-weight:800;font-size:1.12rem;letter-spacing:-.02em;
+  color:var(--ink);text-decoration:none;display:flex;align-items:baseline;gap:.5rem}
+.brand .tag{font-family:var(--mono);font-size:.62rem;letter-spacing:.12em;color:var(--blue);
+  border:1px solid var(--blue);border-radius:20px;padding:.15rem .5rem;text-transform:uppercase}
+.nav-links{display:flex;gap:.35rem;align-items:center;list-style:none;margin:0;padding:0}
+.nav-links a{
+  font-family:var(--disp);font-weight:600;font-size:.92rem;color:var(--ink-soft);
+  text-decoration:none;padding:.5rem .7rem;border-radius:9px;transition:.18s;
+}
+.nav-links a:hover{background:var(--paper-2);color:var(--ink)}
+.nav-links a.active{color:var(--ink);background:var(--white);box-shadow:var(--shadow)}
+.nav-toggle{display:none;background:none;border:1px solid var(--line);border-radius:9px;
+  width:44px;height:40px;cursor:pointer;align-items:center;justify-content:center}
+.nav-toggle span,.nav-toggle span::before,.nav-toggle span::after{
+  content:"";display:block;width:20px;height:2px;background:var(--ink);position:relative;transition:.2s}
+.nav-toggle span::before{position:absolute;top:-6px}
+.nav-toggle span::after{position:absolute;top:6px}
+
+@media(max-width:880px){
+  .nav-toggle{display:inline-flex}
+  .nav-links{
+    position:absolute;top:68px;left:0;right:0;flex-direction:column;align-items:stretch;
+    gap:0;background:var(--paper);border-bottom:1px solid var(--line);
+    padding:8px 16px 16px;transform:translateY(-12px);opacity:0;pointer-events:none;transition:.2s}
+  .nav-links.open{transform:none;opacity:1;pointer-events:auto}
+  .nav-links a{padding:.8rem .6rem;border-radius:9px}
+}
+
+/* ---------- Hero ---------- */
+.hero{padding:84px 0 64px;position:relative;overflow:hidden}
+.hero .wrap{position:relative;z-index:2}
+.hero h1{
+  font-family:var(--disp);font-weight:800;letter-spacing:-.03em;line-height:1.02;
+  font-size:clamp(2.6rem,7vw,5.2rem);margin:.2rem 0 .4rem;color:var(--ink)}
+.hero h1 .accent{color:var(--blue)}
+.hero .lede{font-size:clamp(1.05rem,2.2vw,1.35rem);max-width:46ch;color:var(--ink-soft);margin:.6rem 0 1.8rem}
+.hero-meta{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2rem}
+.chip{font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;background:var(--white);
+  border:1px solid var(--line);border-radius:30px;padding:.4rem .8rem;color:var(--ink-soft)}
+.hero-grid{position:absolute;inset:0;z-index:1;opacity:.5;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:44px 44px;-webkit-mask-image:radial-gradient(ellipse 80% 60% at 70% 20%,#000,transparent 75%);
+          mask-image:radial-gradient(ellipse 80% 60% at 70% 20%,#000,transparent 75%)}
+.btns{display:flex;flex-wrap:wrap;gap:.8rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--disp);font-weight:600;
+  font-size:.98rem;text-decoration:none;padding:.8rem 1.3rem;border-radius:11px;transition:.18s;border:1px solid transparent}
+.btn-primary{background:var(--ink);color:var(--paper)}
+.btn-primary:hover{background:var(--blue);color:#fff}
+.btn-ghost{background:transparent;border-color:var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--ink);background:var(--white)}
+
+/* ---------- Section ---------- */
+.section{padding:64px 0}
+.section-alt{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.section-dark{background:var(--ink);color:var(--paper-2)}
+.section-dark .eyebrow{color:#9aa6c7}
+.section-dark h2,.section-dark h3{color:#fff}
+.section-head{max-width:60ch;margin-bottom:2.2rem}
+.section-head h2{font-family:var(--disp);font-weight:800;letter-spacing:-.02em;
+  font-size:clamp(1.7rem,4vw,2.6rem);line-height:1.05;margin:.1rem 0 .5rem}
+.section-head p{color:var(--ink-soft);margin:0}
+.section-dark .section-head p{color:#b9c2dc}
+
+/* ---------- Year cards (home) ---------- */
+.years{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:880px){.years{grid-template-columns:1fr}}
+.year-card{display:block;text-decoration:none;color:inherit;background:var(--white);
+  border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);transition:.2s;position:relative}
+.year-card:hover{transform:translateY(-4px);border-color:var(--blue)}
+.year-card .num{font-family:var(--disp);font-weight:800;font-size:3.2rem;line-height:1;color:var(--blue)}
+.year-card h3{font-family:var(--disp);font-size:1.25rem;margin:.6rem 0 .3rem;color:var(--ink)}
+.year-card p{font-size:.95rem;color:var(--ink-soft);margin:0 0 1rem}
+.year-card .go{font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;color:var(--blue-deep);text-transform:uppercase}
+
+/* ---------- Competence block ---------- */
+.comp{margin:0 0 18px;background:var(--white);border:1px solid var(--line);
+  border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.comp-head{padding:24px 26px;border-bottom:1px solid var(--line);display:flex;
+  justify-content:space-between;align-items:flex-start;gap:18px;flex-wrap:wrap}
+.comp-head .titles h3{font-family:var(--disp);font-weight:800;font-size:1.35rem;margin:.2rem 0 .25rem;letter-spacing:-.01em}
+.comp-head .titles .bandeau{color:var(--ink-soft);font-size:.98rem;margin:0;max-width:62ch}
+.level{display:flex;align-items:center;gap:.5rem;flex:none}
+.level-dots{display:flex;gap:5px}
+.dot{width:11px;height:11px;border-radius:50%;border:1.5px solid var(--blue)}
+.dot.on{background:var(--blue)}
+.level-label{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;color:var(--ink-soft);text-transform:uppercase}
+.tag-type{font-family:var(--mono);font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;
+  padding:.25rem .55rem;border-radius:20px;border:1px solid var(--line);color:var(--ink-soft);background:var(--paper)}
+.tag-type.spe{color:var(--blue-deep);border-color:var(--blue);background:#eef0ff}
+
+/* ---------- AC accordion (details/summary) ---------- */
+.ac{border-top:1px solid var(--line)}
+.ac:first-child{border-top:none}
+.ac summary{list-style:none;cursor:pointer;padding:18px 26px;display:flex;gap:16px;align-items:flex-start;
+  transition:background .15s}
+.ac summary::-webkit-details-marker{display:none}
+.ac summary:hover{background:var(--paper)}
+.ac .ac-no{font-family:var(--mono);font-size:.8rem;color:var(--blue);font-weight:700;padding-top:.15rem;flex:none}
+.ac .ac-t{flex:1}
+.ac .ac-t .t{font-family:var(--disp);font-weight:600;font-size:1.04rem;color:var(--ink);line-height:1.3}
+.ac .ac-t .s{font-size:.9rem;color:var(--ink-soft);margin-top:.15rem}
+.ac .chev{flex:none;width:22px;height:22px;border-radius:6px;border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;transition:.2s;color:var(--ink-soft);font-size:.8rem}
+.ac[open] .chev{transform:rotate(90deg);border-color:var(--blue);color:var(--blue)}
+.ac-body{padding:4px 26px 26px;border-top:1px dashed var(--line);margin-top:-1px}
+.ac-body .bloc{margin-top:18px}
+.ac-body .bloc h4{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--blue-deep);margin:0 0 .4rem}
+.ac-body .bloc p{margin:0 0 .5rem}
+.ac-body .bloc .bullet{margin:.15rem 0 .15rem;padding-left:1.1rem;position:relative;color:var(--ink-soft)}
+.ac-body .bloc .bullet::before{content:"›";position:absolute;left:0;color:var(--blue)}
+.trace-links{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:18px}
+.trace-link{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--disp);font-weight:600;
+  font-size:.88rem;text-decoration:none;background:var(--ink);color:var(--paper);padding:.55rem .9rem;border-radius:9px;transition:.18s}
+.trace-link:hover{background:var(--blue);color:#fff}
+.trace-link.empty{background:var(--paper-2);color:var(--ink-soft);border:1px dashed var(--line)}
+
+/* ---------- Gabarit (BUT3) ---------- */
+.todo{display:inline-block;font-family:var(--mono);font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--amber);border:1px solid var(--amber);border-radius:20px;padding:.18rem .5rem;margin-left:.5rem;vertical-align:middle}
+.gabarit{background:#fffaf4;border:1px solid #f3dcc4;border-radius:10px;padding:16px 18px;margin-top:16px}
+.gabarit h4{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:#b5611e;margin:.2rem 0 .15rem}
+.gabarit p{margin:0 0 .9rem;color:var(--ink-soft);font-size:.95rem}
+.gabarit p:last-child{margin-bottom:0}
+
+/* ---------- Stage / generic card ---------- */
+.card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px;box-shadow:var(--shadow)}
+.card h3{font-family:var(--disp);font-weight:800;font-size:1.3rem;margin:.1rem 0 .3rem}
+.card .meta{font-family:var(--mono);font-size:.76rem;letter-spacing:.06em;color:var(--blue-deep);text-transform:uppercase;margin-bottom:1rem}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:760px){.grid-2{grid-template-columns:1fr}}
+
+/* ---------- Skills ---------- */
+.skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:880px){.skill-grid{grid-template-columns:1fr}}
+.skill{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:20px}
+.skill h4{font-family:var(--disp);font-weight:700;font-size:1.05rem;margin:0 0 .35rem;color:var(--ink)}
+.skill p{margin:0;font-size:.92rem;color:var(--ink-soft)}
+.htable{width:100%;border-collapse:collapse;background:var(--white);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.htable th,.htable td{text-align:left;padding:14px 16px;border-bottom:1px solid var(--line);vertical-align:top;font-size:.94rem}
+.htable th{font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);background:var(--paper)}
+.htable td:first-child{font-family:var(--disp);font-weight:600;color:var(--ink)}
+.langs{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:16px}
+.lang{font-family:var(--mono);font-size:.82rem;background:var(--white);border:1px solid var(--line);
+  border-radius:30px;padding:.4rem .85rem}
+.lang b{color:var(--blue-deep)}
+
+/* ---------- Progression (bilan) ---------- */
+.prog{display:grid;gap:14px}
+.prog-row{display:grid;grid-template-columns:170px 1fr;gap:18px;align-items:center;
+  background:var(--white);border:1px solid var(--line);border-radius:12px;padding:16px 20px}
+@media(max-width:680px){.prog-row{grid-template-columns:1fr}}
+.prog-row .dom{font-family:var(--disp);font-weight:700;font-size:1.05rem}
+.prog-steps{display:flex;align-items:center;gap:0}
+.step{flex:1;display:flex;align-items:center}
+.step .b{font-family:var(--mono);font-size:.72rem;text-align:center;padding:.45rem .3rem;border-radius:8px;
+  border:1px solid var(--line);background:var(--paper);width:100%;color:var(--ink-soft)}
+.step .b.has{background:var(--blue);color:#fff;border-color:var(--blue)}
+.step .b.spe{background:var(--ink);color:#fff;border-color:var(--ink)}
+.step .arr{color:var(--line);padding:0 .4rem;flex:none}
+
+/* ---------- Footer ---------- */
+.site-footer{background:var(--ink);color:#aeb7d2;padding:46px 0;font-size:.92rem}
+.site-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
+.site-footer a{color:#cdd4e8}
+.site-footer .brand{color:#fff}
+.foot-nav{display:flex;flex-wrap:wrap;gap:1rem;list-style:none;margin:0;padding:0;font-family:var(--disp);font-size:.9rem}
+
+/* ---------- Contact ---------- */
+.contact-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:24px}
+@media(max-width:760px){.contact-grid{grid-template-columns:1fr}}
+.cline{display:flex;gap:.7rem;align-items:baseline;margin:.2rem 0;font-size:1.05rem}
+.cline .k{font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);min-width:90px}
+
+/* ---------- intro paragraph for comp pages ---------- */
+.page-intro{max-width:64ch;font-size:1.1rem;color:var(--ink-soft);margin:0 0 2.4rem}
+
+/* ---------- Stage BUT3 : KPI + problématique ---------- */
+.problematique{background:var(--paper);border-left:3px solid var(--blue);border-radius:0 10px 10px 0;
+  padding:14px 18px;margin:16px 0;font-size:1.02rem;color:var(--ink)}
+.pq-label{display:block;font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--blue-deep);margin-bottom:.35rem}
+.kpi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0 8px}
+@media(max-width:680px){.kpi-grid{grid-template-columns:1fr 1fr}}
+.kpi{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.kpi-v{font-family:var(--disp);font-weight:800;font-size:1.4rem;color:var(--blue-deep);line-height:1.1}
+.kpi-l{font-family:var(--mono);font-size:.68rem;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-soft);margin-top:.3rem}
+
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px;border-radius:4px}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Anatole Lodier <span class="tag">BUT3 · TC</span></a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span></button>
+    <ul class="nav-links"><li><a href="index.html" class="active">Accueil</a></li><li><a href="but1.html">BUT 1</a></li><li><a href="but2.html">BUT 2</a></li><li><a href="but3.html">BUT 3</a></li><li><a href="bilan.html">Bilan &amp; projet</a></li><li><a href="contact.html">Contact</a></li></ul>
+  </div>
+</header>
+<main>
+
+<section class="hero">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow">BUT Techniques de Commercialisation · 2023 → 2026</p>
+    <h1>Anatole Lodier</h1>
+    <p class="lede">Portfolio de compétences du BUT Techniques de Commercialisation — parcours Marketing Digital, E-Business & Entrepreneuriat. IUT de Toulon.</p>
+    <div class="hero-meta">
+      <span class="chip">IUT de Toulon · La Garde</span>
+      <span class="chip">Marketing Digital · E-Business</span>
+      <span class="chip">Anglais C1 · TOEIC</span>
+    </div>
+    <div class="btns">
+      <a class="btn btn-primary" href="but3.html">BUT 3 →</a>
+      <a class="btn btn-ghost" href="bilan.html">Montée en compétences</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Présentation</p>
+      <h2>BUT TC · Parcours MDEBE</h2></div>
+    <div style="max-width:70ch;font-size:1.12rem;color:var(--ink-soft)">
+      <p>Étudiant en 3ᵉ année de BUT Techniques de Commercialisation à l’IUT de Toulon, parcours Marketing Digital, E-Business & Entrepreneuriat (MDEBE).</p>
+      <p>Ce portfolio regroupe mes compétences et mes travaux sur les trois années de formation : marketing, vente, communication, marketing digital et e-business, ainsi que mes stages.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Parcours</p>
+      <h2>Trois années</h2>
+      <p>Chaque année porte les mêmes domaines à un niveau supérieur. Le BUT 3 spécialise le parcours sur le digital et l’e-business.</p></div>
+    <div class="years">
+      <a class="year-card" href="but1.html"><div class="num">01</div><h3>BUT 1</h3>
+        <p>Fondamentaux : offre commerciale, communication, vente et premier stage.</p>
+        <span class="go">Voir →</span></a>
+      <a class="year-card" href="but2.html"><div class="num">02</div><h3>BUT 2</h3>
+        <p>Environnement complexe : stratégie, négociation, plans 360°, digital et entrepreneuriat.</p>
+        <span class="go">Voir →</span></a>
+      <a class="year-card" href="but3.html"><div class="num">03</div><h3>BUT 3 · MDEBE</h3>
+        <p>Spécialisation : marketing et vente complexes, marketing digital, e-business & entrepreneuriat.</p>
+        <span class="go">Voir →</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <div class="brand" style="font-family:var(--disp);font-weight:800;font-size:1.1rem">Anatole Lodier</div>
+      <div style="margin-top:.4rem">BUT Techniques de Commercialisation — Parcours MDEBE<br>IUT de Toulon · Campus de La Garde</div>
+    </div>
+    <ul class="foot-nav"><li><a href="index.html">Accueil</a></li><li><a href="but1.html">BUT 1</a></li><li><a href="but2.html">BUT 2</a></li><li><a href="but3.html">BUT 3</a></li><li><a href="bilan.html">Bilan &amp; projet</a></li><li><a href="contact.html">Contact</a></li></ul>
+  </div>
+</footer>
+<script>// Menu mobile
+(function(){
+  var t=document.querySelector('.nav-toggle'),l=document.querySelector('.nav-links');
+  if(t&&l){t.addEventListener('click',function(){
+    var o=l.classList.toggle('open');
+    t.setAttribute('aria-expanded',o?'true':'false');
+  });}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BUT 3 — Anatole Lodier</title>
+<meta name="description" content="Portfolio de compétences d'Anatole Lodier, BUT3 Techniques de Commercialisation, parcours Marketing Digital, E-Business & Entrepreneuriat (MDEBE), IUT de Toulon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>/* ============================================================
+   Portfolio Anatole Lodier — BUT3 TC / MDEBE
+   Direction : éditorial "dossier de compétences"
+   ============================================================ */
+:root{
+  --ink:#101626;          /* bleu nuit profond */
+  --ink-soft:#37415a;
+  --paper:#f7f5f0;        /* papier chaud */
+  --paper-2:#efece3;
+  --line:#d9d4c7;
+  --blue:#2f4cff;         /* signal numérique */
+  --blue-deep:#1d2bb3;
+  --amber:#ff8a3d;        /* accent niveau */
+  --green:#15795f;
+  --white:#ffffff;
+  --shadow:0 1px 0 rgba(16,22,38,.04), 0 18px 40px -28px rgba(16,22,38,.45);
+  --radius:14px;
+  --maxw:1120px;
+  --serif:"Source Serif 4", Georgia, serif;
+  --disp:"Bricolage Grotesque", system-ui, sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, monospace;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--serif);font-size:18px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+}
+a{color:var(--blue-deep);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--blue)}
+img{max-width:100%}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+/* ---------- Eyebrow / labels ---------- */
+.eyebrow{
+  font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--ink-soft);margin:0 0 .6rem;
+}
+.mono{font-family:var(--mono)}
+
+/* ---------- Header / nav ---------- */
+.site-header{
+  position:sticky;top:0;z-index:50;background:rgba(247,245,240,.86);
+  backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{font-family:var(--disp);font-weight:800;font-size:1.12rem;letter-spacing:-.02em;
+  color:var(--ink);text-decoration:none;display:flex;align-items:baseline;gap:.5rem}
+.brand .tag{font-family:var(--mono);font-size:.62rem;letter-spacing:.12em;color:var(--blue);
+  border:1px solid var(--blue);border-radius:20px;padding:.15rem .5rem;text-transform:uppercase}
+.nav-links{display:flex;gap:.35rem;align-items:center;list-style:none;margin:0;padding:0}
+.nav-links a{
+  font-family:var(--disp);font-weight:600;font-size:.92rem;color:var(--ink-soft);
+  text-decoration:none;padding:.5rem .7rem;border-radius:9px;transition:.18s;
+}
+.nav-links a:hover{background:var(--paper-2);color:var(--ink)}
+.nav-links a.active{color:var(--ink);background:var(--white);box-shadow:var(--shadow)}
+.nav-toggle{display:none;background:none;border:1px solid var(--line);border-radius:9px;
+  width:44px;height:40px;cursor:pointer;align-items:center;justify-content:center}
+.nav-toggle span,.nav-toggle span::before,.nav-toggle span::after{
+  content:"";display:block;width:20px;height:2px;background:var(--ink);position:relative;transition:.2s}
+.nav-toggle span::before{position:absolute;top:-6px}
+.nav-toggle span::after{position:absolute;top:6px}
+
+@media(max-width:880px){
+  .nav-toggle{display:inline-flex}
+  .nav-links{
+    position:absolute;top:68px;left:0;right:0;flex-direction:column;align-items:stretch;
+    gap:0;background:var(--paper);border-bottom:1px solid var(--line);
+    padding:8px 16px 16px;transform:translateY(-12px);opacity:0;pointer-events:none;transition:.2s}
+  .nav-links.open{transform:none;opacity:1;pointer-events:auto}
+  .nav-links a{padding:.8rem .6rem;border-radius:9px}
+}
+
+/* ---------- Hero ---------- */
+.hero{padding:84px 0 64px;position:relative;overflow:hidden}
+.hero .wrap{position:relative;z-index:2}
+.hero h1{
+  font-family:var(--disp);font-weight:800;letter-spacing:-.03em;line-height:1.02;
+  font-size:clamp(2.6rem,7vw,5.2rem);margin:.2rem 0 .4rem;color:var(--ink)}
+.hero h1 .accent{color:var(--blue)}
+.hero .lede{font-size:clamp(1.05rem,2.2vw,1.35rem);max-width:46ch;color:var(--ink-soft);margin:.6rem 0 1.8rem}
+.hero-meta{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2rem}
+.chip{font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;background:var(--white);
+  border:1px solid var(--line);border-radius:30px;padding:.4rem .8rem;color:var(--ink-soft)}
+.hero-grid{position:absolute;inset:0;z-index:1;opacity:.5;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:44px 44px;-webkit-mask-image:radial-gradient(ellipse 80% 60% at 70% 20%,#000,transparent 75%);
+          mask-image:radial-gradient(ellipse 80% 60% at 70% 20%,#000,transparent 75%)}
+.btns{display:flex;flex-wrap:wrap;gap:.8rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--disp);font-weight:600;
+  font-size:.98rem;text-decoration:none;padding:.8rem 1.3rem;border-radius:11px;transition:.18s;border:1px solid transparent}
+.btn-primary{background:var(--ink);color:var(--paper)}
+.btn-primary:hover{background:var(--blue);color:#fff}
+.btn-ghost{background:transparent;border-color:var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--ink);background:var(--white)}
+
+/* ---------- Section ---------- */
+.section{padding:64px 0}
+.section-alt{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.section-dark{background:var(--ink);color:var(--paper-2)}
+.section-dark .eyebrow{color:#9aa6c7}
+.section-dark h2,.section-dark h3{color:#fff}
+.section-head{max-width:60ch;margin-bottom:2.2rem}
+.section-head h2{font-family:var(--disp);font-weight:800;letter-spacing:-.02em;
+  font-size:clamp(1.7rem,4vw,2.6rem);line-height:1.05;margin:.1rem 0 .5rem}
+.section-head p{color:var(--ink-soft);margin:0}
+.section-dark .section-head p{color:#b9c2dc}
+
+/* ---------- Year cards (home) ---------- */
+.years{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:880px){.years{grid-template-columns:1fr}}
+.year-card{display:block;text-decoration:none;color:inherit;background:var(--white);
+  border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);transition:.2s;position:relative}
+.year-card:hover{transform:translateY(-4px);border-color:var(--blue)}
+.year-card .num{font-family:var(--disp);font-weight:800;font-size:3.2rem;line-height:1;color:var(--blue)}
+.year-card h3{font-family:var(--disp);font-size:1.25rem;margin:.6rem 0 .3rem;color:var(--ink)}
+.year-card p{font-size:.95rem;color:var(--ink-soft);margin:0 0 1rem}
+.year-card .go{font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;color:var(--blue-deep);text-transform:uppercase}
+
+/* ---------- Competence block ---------- */
+.comp{margin:0 0 18px;background:var(--white);border:1px solid var(--line);
+  border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.comp-head{padding:24px 26px;border-bottom:1px solid var(--line);display:flex;
+  justify-content:space-between;align-items:flex-start;gap:18px;flex-wrap:wrap}
+.comp-head .titles h3{font-family:var(--disp);font-weight:800;font-size:1.35rem;margin:.2rem 0 .25rem;letter-spacing:-.01em}
+.comp-head .titles .bandeau{color:var(--ink-soft);font-size:.98rem;margin:0;max-width:62ch}
+.level{display:flex;align-items:center;gap:.5rem;flex:none}
+.level-dots{display:flex;gap:5px}
+.dot{width:11px;height:11px;border-radius:50%;border:1.5px solid var(--blue)}
+.dot.on{background:var(--blue)}
+.level-label{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;color:var(--ink-soft);text-transform:uppercase}
+.tag-type{font-family:var(--mono);font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;
+  padding:.25rem .55rem;border-radius:20px;border:1px solid var(--line);color:var(--ink-soft);background:var(--paper)}
+.tag-type.spe{color:var(--blue-deep);border-color:var(--blue);background:#eef0ff}
+
+/* ---------- AC accordion (details/summary) ---------- */
+.ac{border-top:1px solid var(--line)}
+.ac:first-child{border-top:none}
+.ac summary{list-style:none;cursor:pointer;padding:18px 26px;display:flex;gap:16px;align-items:flex-start;
+  transition:background .15s}
+.ac summary::-webkit-details-marker{display:none}
+.ac summary:hover{background:var(--paper)}
+.ac .ac-no{font-family:var(--mono);font-size:.8rem;color:var(--blue);font-weight:700;padding-top:.15rem;flex:none}
+.ac .ac-t{flex:1}
+.ac .ac-t .t{font-family:var(--disp);font-weight:600;font-size:1.04rem;color:var(--ink);line-height:1.3}
+.ac .ac-t .s{font-size:.9rem;color:var(--ink-soft);margin-top:.15rem}
+.ac .chev{flex:none;width:22px;height:22px;border-radius:6px;border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;transition:.2s;color:var(--ink-soft);font-size:.8rem}
+.ac[open] .chev{transform:rotate(90deg);border-color:var(--blue);color:var(--blue)}
+.ac-body{padding:4px 26px 26px;border-top:1px dashed var(--line);margin-top:-1px}
+.ac-body .bloc{margin-top:18px}
+.ac-body .bloc h4{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--blue-deep);margin:0 0 .4rem}
+.ac-body .bloc p{margin:0 0 .5rem}
+.ac-body .bloc .bullet{margin:.15rem 0 .15rem;padding-left:1.1rem;position:relative;color:var(--ink-soft)}
+.ac-body .bloc .bullet::before{content:"›";position:absolute;left:0;color:var(--blue)}
+.trace-links{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:18px}
+.trace-link{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--disp);font-weight:600;
+  font-size:.88rem;text-decoration:none;background:var(--ink);color:var(--paper);padding:.55rem .9rem;border-radius:9px;transition:.18s}
+.trace-link:hover{background:var(--blue);color:#fff}
+.trace-link.empty{background:var(--paper-2);color:var(--ink-soft);border:1px dashed var(--line)}
+
+/* ---------- Gabarit (BUT3) ---------- */
+.todo{display:inline-block;font-family:var(--mono);font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--amber);border:1px solid var(--amber);border-radius:20px;padding:.18rem .5rem;margin-left:.5rem;vertical-align:middle}
+.gabarit{background:#fffaf4;border:1px solid #f3dcc4;border-radius:10px;padding:16px 18px;margin-top:16px}
+.gabarit h4{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:#b5611e;margin:.2rem 0 .15rem}
+.gabarit p{margin:0 0 .9rem;color:var(--ink-soft);font-size:.95rem}
+.gabarit p:last-child{margin-bottom:0}
+
+/* ---------- Stage / generic card ---------- */
+.card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px;box-shadow:var(--shadow)}
+.card h3{font-family:var(--disp);font-weight:800;font-size:1.3rem;margin:.1rem 0 .3rem}
+.card .meta{font-family:var(--mono);font-size:.76rem;letter-spacing:.06em;color:var(--blue-deep);text-transform:uppercase;margin-bottom:1rem}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:760px){.grid-2{grid-template-columns:1fr}}
+
+/* ---------- Skills ---------- */
+.skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:880px){.skill-grid{grid-template-columns:1fr}}
+.skill{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:20px}
+.skill h4{font-family:var(--disp);font-weight:700;font-size:1.05rem;margin:0 0 .35rem;color:var(--ink)}
+.skill p{margin:0;font-size:.92rem;color:var(--ink-soft)}
+.htable{width:100%;border-collapse:collapse;background:var(--white);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.htable th,.htable td{text-align:left;padding:14px 16px;border-bottom:1px solid var(--line);vertical-align:top;font-size:.94rem}
+.htable th{font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);background:var(--paper)}
+.htable td:first-child{font-family:var(--disp);font-weight:600;color:var(--ink)}
+.langs{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:16px}
+.lang{font-family:var(--mono);font-size:.82rem;background:var(--white);border:1px solid var(--line);
+  border-radius:30px;padding:.4rem .85rem}
+.lang b{color:var(--blue-deep)}
+
+/* ---------- Progression (bilan) ---------- */
+.prog{display:grid;gap:14px}
+.prog-row{display:grid;grid-template-columns:170px 1fr;gap:18px;align-items:center;
+  background:var(--white);border:1px solid var(--line);border-radius:12px;padding:16px 20px}
+@media(max-width:680px){.prog-row{grid-template-columns:1fr}}
+.prog-row .dom{font-family:var(--disp);font-weight:700;font-size:1.05rem}
+.prog-steps{display:flex;align-items:center;gap:0}
+.step{flex:1;display:flex;align-items:center}
+.step .b{font-family:var(--mono);font-size:.72rem;text-align:center;padding:.45rem .3rem;border-radius:8px;
+  border:1px solid var(--line);background:var(--paper);width:100%;color:var(--ink-soft)}
+.step .b.has{background:var(--blue);color:#fff;border-color:var(--blue)}
+.step .b.spe{background:var(--ink);color:#fff;border-color:var(--ink)}
+.step .arr{color:var(--line);padding:0 .4rem;flex:none}
+
+/* ---------- Footer ---------- */
+.site-footer{background:var(--ink);color:#aeb7d2;padding:46px 0;font-size:.92rem}
+.site-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
+.site-footer a{color:#cdd4e8}
+.site-footer .brand{color:#fff}
+.foot-nav{display:flex;flex-wrap:wrap;gap:1rem;list-style:none;margin:0;padding:0;font-family:var(--disp);font-size:.9rem}
+
+/* ---------- Contact ---------- */
+.contact-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:24px}
+@media(max-width:760px){.contact-grid{grid-template-columns:1fr}}
+.cline{display:flex;gap:.7rem;align-items:baseline;margin:.2rem 0;font-size:1.05rem}
+.cline .k{font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);min-width:90px}
+
+/* ---------- intro paragraph for comp pages ---------- */
+.page-intro{max-width:64ch;font-size:1.1rem;color:var(--ink-soft);margin:0 0 2.4rem}
+
+/* ---------- Stage BUT3 : KPI + problématique ---------- */
+.problematique{background:var(--paper);border-left:3px solid var(--blue);border-radius:0 10px 10px 0;
+  padding:14px 18px;margin:16px 0;font-size:1.02rem;color:var(--ink)}
+.pq-label{display:block;font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--blue-deep);margin-bottom:.35rem}
+.kpi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0 8px}
+@media(max-width:680px){.kpi-grid{grid-template-columns:1fr 1fr}}
+.kpi{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.kpi-v{font-family:var(--disp);font-weight:800;font-size:1.4rem;color:var(--blue-deep);line-height:1.1}
+.kpi-l{font-family:var(--mono);font-size:.68rem;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-soft);margin-top:.3rem}
+
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px;border-radius:4px}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Anatole Lodier <span class="tag">BUT3 · TC</span></a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span></button>
+    <ul class="nav-links"><li><a href="index.html">Accueil</a></li><li><a href="but1.html">BUT 1</a></li><li><a href="but2.html">BUT 2</a></li><li><a href="but3.html" class="active">BUT 3</a></li><li><a href="bilan.html">Bilan &amp; projet</a></li><li><a href="contact.html">Contact</a></li></ul>
+  </div>
+</header>
+<main>
+
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">Année 3 · Parcours MDEBE</p>
+    <h1 style="font-family:var(--disp);font-weight:800;letter-spacing:-.02em;font-size:clamp(2rem,5vw,3.2rem);margin:.1rem 0 .8rem">BUT 3 — Spécialisation</h1>
+    <p class="page-intro">Année de spécialisation, parcours MDEBE (Marketing Digital, E-Business &amp; Entrepreneuriat). Quatre compétences portées au niveau supérieur : deux communes à toutes les TC (Marketing, Vente) et deux spécifiques au parcours (Marketing digital, E-business &amp; entrepreneuriat). Fil rouge entrepreneurial : NutriShot, startup de shots nutritionnels que j’ai co-fondée avec Alexis Dalmasso et Nathan Livingstone.</p>
+    <section class="comp">
+  <div class="comp-head">
+    <div class="titles"><p class="eyebrow">Compétence · Marketing</p><h3>Marketing</h3><p class="bandeau">Construire une solution client étendue à tous les secteurs d’activité</p></div>
+    <div style="display:flex;flex-direction:column;align-items:flex-end;gap:.6rem"><div class="level"><span class="level-label">Niveau</span><div class="level-dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div></div><span class="tag-type ">Compétence commune</span></div>
+  </div>
+  <details class="ac">
+  <summary><span class="ac-no">AC01</span>
+    <span class="ac-t"><span class="t">Mettre en place des outils de veille pour anticiper les évolutions de l’environnement</span><div class="s">Analyse du scandale SHEIN × BHV sur X/Twitter</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Rapport d’analyse de la crise de réputation SHEIN &amp; BHV et de sa diffusion sur X/Twitter, à partir d’un corpus de 6 041 tweets (octobre–novembre 2025). Travail de groupe (Alcaraz, Herion, Leclercq, Lodier, Livingstone, Dalmasso) pour M. Papa Djibril Ngom.</p></div><div class="bloc"><h4>Démarche &amp; actions</h4><p>Collecte et traitement des données sociales : chronologie de la crise (poupées SHEIN le 4 novembre, ouverture du corner BHV le 10 novembre), cartographie des termes dominants, histogrammes quotidiens et mensuels. Quantification de la propagation : +33 316 % de volume entre octobre et novembre, pic de 332 tweets le 6 novembre.</p></div><div class="bloc"><h4>Bilan critique</h4><p>Ce rapport montre ma capacité à mobiliser des outils de veille numérique et à analyser des données sociales pour suivre, en temps réel, la diffusion d’une crise de marque — de l’émergence jusqu’à l’extinction de la conversation. Une approche rigoureuse de la surveillance de l’environnement, clé pour anticiper les risques réputationnels.</p></div><div class="trace-links"><span class="trace-link empty" title="Dépose ce fichier dans le dépôt puis remplace par un lien">⤓ Rapport_analyse_SHEIN_BHV.pdf · à déposer</span></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC02</span>
+    <span class="ac-t"><span class="t">Élaborer une stratégie marketing dans un environnement instable</span><div class="s">SAÉ Stratégie d’entreprise — Auto-école AZUR 83</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>SAÉ Stratégie d’entreprise : analyse stratégique complète de l’Auto-école AZUR 83 (créée en 2017, La Garde et La Farlède). Marché très concurrentiel marqué par les plateformes en ligne et une instabilité réglementaire croissante. Travail de groupe (Dalmasso, Livingstone, Lodier, Michel, Arbouche — Groupe 3 MDEBE).</p></div><div class="bloc"><h4>Démarche &amp; actions</h4><p>Diagnostic stratégique via PESTEL : opportunités (aides à l’électrification de la flotte, résilience du pouvoir d’achat varois, CPF) et menaces (plateformes numériques, inflation des coûts, manque de places d’examen, instabilité réglementaire). Recommandations calibrées pour les ressources réelles d’une TPE locale.</p></div><div class="bloc"><h4>Bilan critique</h4><p>Ce travail démontre ma capacité à conduire un diagnostic rigoureux dans un environnement instable et concurrentiel. La maîtrise du PESTEL et la pertinence des recommandations — adaptées aux contraintes d’une TPE — traduisent une compréhension avancée des dynamiques sectorielles et une aptitude à bâtir une stratégie cohérente malgré l’incertitude.</p></div><div class="trace-links"><span class="trace-link empty" title="Dépose ce fichier dans le dépôt puis remplace par un lien">⤓ Auto-ecole_Strategie_entreprise.pdf · à déposer</span></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC03</span>
+    <span class="ac-t"><span class="t">Faire évoluer l’offre à l’aide de leviers de création de valeur</span><div class="s">Cahier des charges CRM — TechSolutions</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Cahier des charges pour le choix et le déploiement d’un CRM chez TechSolutions, PME éditrice de logiciels de gestion (ERP, paie, comptabilité) en forte croissance (+25 % de CA sur deux ans) et en expansion internationale. Réalisé en groupe (Dalmasso, Lodier, Merlo, Livingstone) en 2025-2026.</p></div><div class="bloc"><h4>Démarche &amp; actions</h4><p>Analyse des besoins et phasage : Phase 1 indispensable (base contacts centralisée, gestion du pipeline, automatisation marketing, intégrations API Outlook/ERP, conformité RGPD) ; Phase 2 souhaitable (scoring automatique multi-critères). Identification et gestion des risques : qualité des données, résistance au changement, dépassements budgétaires, intégration technique.</p></div><div class="bloc"><h4>Bilan critique</h4><p>Ce CDC montre ma capacité à structurer une évolution de l’offre par la création de valeur client — centralisation des données et automatisation des processus commerciaux. Le phasage, la gestion des risques et les critères de choix reflètent une pensée orientée performance, scalabilité et conformité.</p></div><div class="trace-links"><span class="trace-link empty" title="Dépose ce fichier dans le dépôt puis remplace par un lien">⤓ CDC_CRM_TechSolutions.pdf · à déposer</span></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC04</span>
+    <span class="ac-t"><span class="t">Intégrer la RSE dans la stratégie de l’offre</span><div class="s">Rapport dialectique — le télétravail en entreprise</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Rapport dialectique sur la mise en place du télétravail (Dalmasso, Livingstone, Lodier), remis le 26/09/2025 à Mme Cottigny dans le cadre du BUT TC 3. Plan dialectique : avantages, limites et risques, recommandations de déploiement.</p></div><div class="bloc"><h4>Démarche &amp; actions</h4><p>Analyse des bénéfices RSE (réduction de l’empreinte CO₂, attractivité des talents, qualité de vie au travail, économies de locaux), des risques organisationnels et informatiques, et du cadre juridique (Code du travail, volontariat, charte). Recommandation d’un déploiement progressif : phase pilote, mesure des KPI (productivité, satisfaction, absentéisme), ajustement des modalités hybrides.</p></div><div class="bloc"><h4>Bilan critique</h4><p>Ce rapport illustre ma capacité à analyser les dimensions RSE d’une décision organisationnelle et à les intégrer dans une stratégie d’offre employeur. La structure dialectique traduit une pensée critique et nuancée — reconnaître les limites tout en formulant des recommandations concrètes.</p></div><div class="trace-links"><span class="trace-link empty" title="Dépose ce fichier dans le dépôt puis remplace par un lien">⤓ Rapport_Teletravail.pdf · à déposer</span></div></div>
+</details>
+</section><section class="comp">
+  <div class="comp-head">
+    <div class="titles"><p class="eyebrow">Compétence · Vente</p><h3>Vente</h3><p class="bandeau">Mener une vente complexe</p></div>
+    <div style="display:flex;flex-direction:column;align-items:flex-end;gap:.6rem"><div class="level"><span class="level-label">Niveau</span><div class="level-dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div></div><span class="tag-type ">Compétence commune</span></div>
+  </div>
+  <details class="ac">
+  <summary><span class="ac-no">AC01</span>
+    <span class="ac-t"><span class="t">Identifier les techniques d’achat employées par un acheteur professionnel</span><div class="s">Cas Klean Kanteen × Patagonia — négociation acheteur/fournisseur</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Simulation de négociation acheteur/fournisseur (cas Klean Kanteen chez Patagonia). Patagonia (CA 1,5 Md$ en 2023-2024, siège européen à Amsterdam) souhaite s’approvisionner en 2 600 gourdes (3 références) pour 7 Retail stores et 40 Partner stores. Conditions : taux de marque cible 30 %, paiement à 60 jours, livraison au 01/03/2026.</p></div><div class="bloc"><h4>Démarche &amp; actions</h4><p>Analyse de l’offre commerciale de Scalata Concept, calcul des taux de marque global et par produit, préparation de l’entretien. Identification des techniques d’achat : mise en concurrence des fournisseurs, négociation du taux de marque, conditionnalité des délais, paiement à 60 jours utilisé comme levier de pression.</p></div><div class="bloc"><h4>Bilan critique</h4><p>Ce cas montre ma capacité à me placer dans la posture d’un acheteur professionnel et à décrypter ses leviers de pression. La maîtrise des calculs de taux de marque et l’analyse fine de l’offre fournisseur sont directement opérationnelles en vente complexe B2B, pour anticiper les objections et adapter sa stratégie.</p></div><div class="trace-links"><span class="trace-link empty" title="Dépose ce fichier dans le dépôt puis remplace par un lien">⤓ Cas_Klean_Kanteen_Acheteur_Fournisseur.pdf · à déposer</span></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC02</span>
+    <span class="ac-t"><span class="t">Élaborer des outils de gestion et de calcul efficaces (facture, échéancier, devis) pour la vente complexe</span><div class="s">Facture pro forma — séminaire « Wild &amp; Sumbawa »</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Facture pro forma émise par « Time on Target » (M. Léonard), spécialiste du teambuilding nature-aventure, pour le séminaire « Wild &amp; Sumbawa » du client Kooi-M. Grazini (Lanester). Facture N°F-2026-02-KOOI-001 du 13/04/2026 : 50 participants, 2 jours / 1 nuit dans le massif de la Chartreuse.</p></div><div class="bloc"><h4>Démarche &amp; actions</h4><p>Élaboration d’une facture multi-lignes conforme : forfait activités 2J/1N (50 × 150 € = 7 500 € HT, 5 moniteurs inclus), forfait repas (50 × 29 € = 1 450 € HT, 3 repas), encadrement supplémentaire (5 × 140 € = 700 € HT). Mentions légales, numérotation séquentielle, coordonnées émetteur/client et conditions de règlement.</p></div><div class="bloc"><h4>Bilan critique</h4><p>Ce document démontre la maîtrise des outils de gestion en vente complexe multi-prestations. La décomposition par ligne et la conformité des mentions légales reflètent une compétence administrative directement transférable, indispensable pour sécuriser juridiquement et financièrement un engagement commercial.</p></div><div class="trace-links"><span class="trace-link empty" title="Dépose ce fichier dans le dépôt puis remplace par un lien">⤓ Facture_Time_on_Target.pdf · à déposer</span></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC03</span>
+    <span class="ac-t"><span class="t">Maîtriser les codes propres à l’univers spécifique rencontré (achat, finance, industrie, international…)</span><div class="s">Nego Sketch (M. Retali) — médiation de crise</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Jeu de rôle de négociation encadré par M. Retali, dans un contexte de crise atypique : prise d’otage d’une boulangerie après un différend. Dans le groupe, j’ai assuré le rôle de négociateur, avec une négociatrice (Nesrine) et une policière (Manon). Univers : médiation de crise et négociation sous tension.</p></div><div class="bloc"><h4>Démarche &amp; actions</h4><p>Application des techniques de négociation de crise : prise de contact non-menaçante, découverte des besoins profonds (frustration, reconnaissance), reformulation empathique, gestion des émotions et de la tension, recherche d’une sortie acceptable pour toutes les parties. Adaptation du registre aux codes de l’univers (vocabulaire émotionnel, écoute active, gestion des silences).</p></div><div class="bloc"><h4>Bilan critique</h4><p>Ce sketch démontre ma capacité à m’approprier rapidement les codes d’un univers de négociation exigeant et à adapter ma posture et mon discours. L’écoute active, la reformulation et la gestion de la pression sont directement transférables à la vente complexe face à des interlocuteurs difficiles.</p></div><div class="trace-links"><span class="trace-link empty" title="Dépose ce fichier dans le dépôt puis remplace par un lien">⤓ Nego_Sketch_Retali.pdf · à déposer</span></div></div>
+</details>
+</section><section class="comp">
+  <div class="comp-head">
+    <div class="titles"><p class="eyebrow">Compétence · Marketing digital</p><h3>Marketing digital</h3><p class="bandeau">Développer le projet digital en tant qu’initiateur</p></div>
+    <div style="display:flex;flex-direction:column;align-items:flex-end;gap:.6rem"><div class="level"><span class="level-label">Niveau</span><div class="level-dots"><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div><span class="tag-type spe">Spécifique parcours MDEBE</span></div>
+  </div>
+  <details class="ac">
+  <summary><span class="ac-no">AC01</span>
+    <span class="ac-t"><span class="t">Exploiter les données de masse en mobilisant les bons outils de traitement de l’information</span><div class="s">Étude comparative de trois IA selon le ton du prompt</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Dossier d’analyse comparative de trois IA (dont Gemini et Claude) selon quatre tons de prompt : dénigrant, neutre, poli, impératif. Étude quantitative avec grille de scoring KPI — performance technique (richesse, créativité, qualité des explications, /30) et forme (usage du langage, /10).</p></div><div class="bloc"><h4>Démarche &amp; actions</h4><p>Conception d’une grille de scoring reproductible, tests systématiques de chaque ton sur chaque IA, analyse comparative. Résultat clé : le ton « exigeant » produit le meilleur contenu technique (Gemini 27,6/30 ; Claude 28/30), tandis que le ton « poli » maximise la forme — performance technique et qualité formelle évoluent en sens inverse selon le niveau d’exigence du prompt.</p></div><div class="bloc"><h4>Bilan critique</h4><p>Ce dossier illustre ma capacité à traiter des données de façon structurée et à en extraire des insights actionnables. La démarche scientifique (grille reproductible, interprétation nuancée, recommandations) démontre une maîtrise des outils d’analyse appliqués à l’IA, utile pour exploiter la donnée dans tout projet digital.</p></div><div class="trace-links"><span class="trace-link empty" title="Dépose ce fichier dans le dépôt puis remplace par un lien">⤓ Dossier_analyse_IA_tons.pdf · à déposer</span></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC02</span>
+    <span class="ac-t"><span class="t">Mettre en œuvre des spécificités du marketing digital</span><div class="s">Conception et déploiement d’un site web (GitHub Pages)</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Création d’un site web complet en BUT 3, hébergé sur GitHub Pages, mettant en application les spécificités du marketing digital : architecture de l’information, expérience utilisateur, stratégie de contenu et identité visuelle cohérente.</p></div><div class="bloc"><h4>Démarche &amp; actions</h4><p>Conception UX (arborescence, wireframes, parcours utilisateur), développement front-end (HTML/CSS/JS), rédaction éditoriale orientée SEO, mise en ligne via GitHub Pages. Choix techniques et éditoriaux justifiés par des objectifs de conversion et de fidélisation.</p></div><div class="bloc"><h4>Bilan critique</h4><p>Ce projet est la preuve concrète de la maîtrise des leviers digitaux clés — UX, contenu, SEO on-page, déploiement. La cohérence entre identité visuelle, stratégie de contenu et expérience utilisateur traduit une vision intégrée du marketing digital, au-delà de la théorie.</p></div><div class="trace-links"><span class="trace-link empty" title="Dépose ce fichier dans le dépôt puis remplace par un lien">⤓ Lien-site-web.txt · à déposer</span></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC03</span>
+    <span class="ac-t"><span class="t">Élaborer un cahier des charges e-business</span><div class="s">Cahier des charges CRM — TechSolutions</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Cahier des charges pour le déploiement d’un CRM chez TechSolutions (PME en forte croissance, +25 % de CA sur deux ans, expansion internationale), structurant les besoins fonctionnels et techniques d’une solution digitale complète. Réalisé en groupe (Dalmasso, Lodier, Merlo, Livingstone) en 2025-2026.</p></div><div class="bloc"><h4>Démarche &amp; actions</h4><p>Structuration en deux phases (Phase 1 indispensable : base contacts, pipeline, automatisation marketing, intégrations API Outlook/ERP, conformité RGPD ; Phase 2 souhaitable : scoring automatique). Définition des indicateurs de succès, des critères de sélection et gestion anticipée des risques (résistance au changement, qualité des données, intégration).</p></div><div class="bloc"><h4>Bilan critique</h4><p>Ce CDC démontre ma capacité à structurer les besoins d’un projet e-business de façon complète et réaliste. L’articulation entre fonctionnalités métier, contraintes techniques et conformité RGPD illustre une vision à 360° du cahier des charges digital, directement applicable en transformation numérique.</p></div><div class="trace-links"><span class="trace-link empty" title="Dépose ce fichier dans le dépôt puis remplace par un lien">⤓ CDC_CRM_TechSolutions.pdf · à déposer</span></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC04</span>
+    <span class="ac-t"><span class="t">S’appuyer sur les indicateurs de performances pour améliorer la relation client digitalisée</span><div class="s">Marketing des services — Chronodrive</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Exposé « Marketing des services chez Chronodrive » pour Mme Perrin et M. Retali. Chronodrive : pionnier du drive alimentaire en France (créé en 2004, 57 magasins, CA ~462 M€, 3 700 collaborateurs). Réalisé par Dalmasso, Livingstone, Lodier, Ciappara, Osmanovic (Groupe 3 MDEBE).</p></div><div class="bloc"><h4>Démarche &amp; actions</h4><p>Application des outils du marketing des services : 7P, servuction, 10 dimensions de la qualité, satisfaction client et personnel, blueprints, fidélité et récupération de service. Évaluation des KPI relationnels face à la promesse client : commande en ligne → préparation en 30 min → chargement en 5 min.</p></div><div class="bloc"><h4>Bilan critique</h4><p>Ce travail illustre la maîtrise des indicateurs de performance de la relation client digitalisée. Appliquer les blueprints et les 7P à un acteur réel du e-commerce démontre une aptitude concrète à piloter la relation client par la mesure et à traduire la satisfaction en recommandations d’amélioration.</p></div><div class="trace-links"><span class="trace-link empty" title="Dépose ce fichier dans le dépôt puis remplace par un lien">⤓ Chronodrive_marketing_services.pdf · à déposer</span></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC05</span>
+    <span class="ac-t"><span class="t">Proposer des solutions adaptées aux spécificités de la chaîne logistique du e-commerce</span><div class="s">Volet logistique du business model NutriShot</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Section logistique et distribution du business model NutriShot : contraintes spécifiques du e-commerce de compléments alimentaires (format 50 ml, conservation, réglementation, livraison du dernier kilomètre). Projet co-fondé avec Alexis Dalmasso et Nathan Livingstone en BUT 3.</p></div><div class="bloc"><h4>Démarche &amp; actions</h4><p>Identification des spécificités logistiques des shots (conservation, format, réglementation), choix des canaux (site e-commerce direct + marketplaces + pharmacies partenaires), solutions de fulfillment adaptées (prestataire 3PL, click &amp; collect pharmacies), et intégration des coûts logistiques dans le modèle financier FISY.</p></div><div class="bloc"><h4>Bilan critique</h4><p>Penser la chaîne e-commerce de bout en bout — de la commande au dernier kilomètre — en cohérence avec le modèle d’affaires et la réglementation, c’est ce qui distingue un projet e-business crédible d’un simple concept. Cette vision systémique est l’un de mes apports clés sur NutriShot.</p></div><div class="trace-links"><span class="trace-link empty" title="Dépose ce fichier dans le dépôt puis remplace par un lien">⤓ NutriShot_logistique.pdf · à déposer</span></div></div>
+</details>
+</section><section class="comp">
+  <div class="comp-head">
+    <div class="titles"><p class="eyebrow">Compétence · E-Business &amp; Entrepreneuriat</p><h3>E-Business &amp; Entrepreneuriat</h3><p class="bandeau">Développer un projet e-business en tant que responsable de projet ou d’entreprise</p></div>
+    <div style="display:flex;flex-direction:column;align-items:flex-end;gap:.6rem"><div class="level"><span class="level-label">Niveau</span><div class="level-dots"><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div><span class="tag-type spe">Spécifique parcours MDEBE</span></div>
+  </div>
+  <details class="ac">
+  <summary><span class="ac-no">AC01</span>
+    <span class="ac-t"><span class="t">Concevoir un modèle d’affaires complet incluant les sources de valeur, les parties prenantes et les externalités</span><div class="s">Business model &amp; pitch deck NutriShot</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Pitch deck NutriShot (30 slides) présentant le projet de startup de shots nutritionnels que j’ai co-fondé avec Alexis Dalmasso et Nathan Livingstone. Marché cible : les functional drinks (+15 %/an), 70 % des actifs urbains déclarant fatigue ou stress au quotidien.</p></div><div class="bloc"><h4>Démarche &amp; actions</h4><p>Construction complète du business model : constat marché, proposition de valeur (format 50 ml, 10 formules, 100 % naturel, assimilation 4× plus rapide), segmentation (actifs urbains 25-45 ans), canaux (e-commerce direct + pharmacies), structure de coûts et sources de revenus. Mobilisation du BMC et du Lean Canvas pour itérer sur l’offre.</p></div><div class="bloc"><h4>Bilan critique</h4><p>Le pitch démontre ma capacité à construire un modèle d’affaires cohérent et convaincant, de la proposition de valeur au plan financier. L’articulation entre problème, solution et viabilité économique a été testée face à des évaluateurs extérieurs.</p></div><div class="trace-links"><span class="trace-link empty" title="Dépose ce fichier dans le dépôt puis remplace par un lien">⤓ NutriShot_Pitch_deck.pdf · à déposer</span></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC02</span>
+    <span class="ac-t"><span class="t">Faire des préconisations grâce aux outils du diagnostic stratégique</span><div class="s">Audit SEO &amp; digital du site toulon.fr</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Rapport d’audit SEO et digital du site institutionnel toulon.fr, réalisé en groupe (Julie, Anatole, Alexis, Nathan, Lucie, Laura). Audit d’un site public à fort trafic pour identifier forces et faiblesses et formuler des préconisations actionnables.</p></div><div class="bloc"><h4>Démarche &amp; actions</h4><p>Audit technique via outil de crawl : taux de succès d’exploration de 99,2 % (496/500 URLs), taux d’erreurs 404 à 0,2 % (contre 3-5 % en moyenne web), évaluation de la circulation du « jus SEO » et de l’hygiène des liens internes. Traduction de chaque indicateur technique en impact business (indexation, autorité, UX) pour étayer les recommandations.</p></div><div class="bloc"><h4>Bilan critique</h4><p>Ce rapport illustre la maîtrise des outils de diagnostic stratégique digital. Passer d’un indicateur technique brut (taux de crawl, ratio 404) à une recommandation business concrète démontre une compréhension avancée des leviers de performance digitale.</p></div><div class="trace-links"><span class="trace-link empty" title="Dépose ce fichier dans le dépôt puis remplace par un lien">⤓ Audit_SEO_toulon.pdf · à déposer</span></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC03</span>
+    <span class="ac-t"><span class="t">Élaborer les documents financiers nécessaires en tant que concepteur du business model</span><div class="s">Modèle financier FISY — NutriShot (5 ans)</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Modèle financier NutriShot construit sous FISY : prévisions sur 5 ans (compte de résultat, plan de financement, BFR, trésorerie prévisionnelle). CA an 1 ~282 k€, an 5 ~4,2 M€, marge brute maintenue entre 66 % et 67 %.</p></div><div class="bloc"><h4>Démarche &amp; actions</h4><p>Saisie des hypothèses (prix de vente par canal, volumes annuels, coûts fixes R&amp;D/logistique/communication et variables matières/fabrication), paramétrage des amortissements et de la TVA, itérations pour atteindre un équilibre crédible, vérification des ratios clés (marge nette, BFR, trésorerie nette).</p></div><div class="bloc"><h4>Bilan critique</h4><p>L’exercice FISY démontre ma capacité à traduire un concept entrepreneurial en données financières structurées et défendables. La rigueur des hypothèses est directement transférable en contexte professionnel, notamment pour convaincre des partenaires ou des financeurs.</p></div><div class="trace-links"><span class="trace-link empty" title="Dépose ce fichier dans le dépôt puis remplace par un lien">⤓ FISY_NutriShot.xlsx · à déposer</span></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC04</span>
+    <span class="ac-t"><span class="t">Contrôler la conformité et la pertinence du modèle</span><div class="s">Validation du business plan NutriShot</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Utilisation du modèle FISY en mode contrôle et validation : vérification de la cohérence interne du business plan NutriShot et confrontation des projections aux réalités du marché des functional drinks avant la présentation finale.</p></div><div class="bloc"><h4>Démarche &amp; actions</h4><p>Confrontation des ratios FISY aux benchmarks sectoriels (marges des compléments alimentaires, BFR moyen du e-commerce), identification des incohérences initiales (volumes an 1, coûts logistiques) et ajustement des hypothèses, analyse de sensibilité sur les variables critiques (prix de vente, coût de fabrication, taux de conversion).</p></div><div class="bloc"><h4>Bilan critique</h4><p>Cette démarche de contrôle illustre ma capacité à challenger mes propres hypothèses avec rigueur. Distinguer l’optimisme entrepreneurial de la faisabilité réelle est une compétence clé que ce travail m’a permis de développer, avec un impact direct sur la crédibilité du modèle présenté.</p></div><div class="trace-links"><span class="trace-link empty" title="Dépose ce fichier dans le dépôt puis remplace par un lien">⤓ FISY_NutriShot.xlsx · à déposer</span></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC05</span>
+    <span class="ac-t"><span class="t">Choisir les techniques de créativité individuelle et collective adaptées</span><div class="s">Case study « PokéGo » — distributeur automatique innovant</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Case study « PokéGo, le distributeur révolutionnaire » : projet créatif de groupe (Alexis, Anatole, Nathan, Lucie, Julie, Laura — MDEBE Grp 3) consistant à concevoir un concept innovant de distributeur automatique. Marché analysé : 2,5 Md€ de CA en France (2023), 625 000 à 640 000 automates déployés.</p></div><div class="bloc"><h4>Démarche &amp; actions</h4><p>Démarche en deux temps : analyse de marché (taille, croissance, digitalisation, durabilité) puis benchmark concurrentiel (Selecta, Farmer’s Fridge, Fuji Electric, Azkoyen). Sur cette base factuelle, application de techniques de créativité collective pour concevoir le concept « PokéGo », positionné sur les tendances identifiées.</p></div><div class="bloc"><h4>Bilan critique</h4><p>Ce cas démontre ma capacité à structurer une démarche créative collective : analyse → benchmark → idéation → concept. L’ancrage dans des données de marché réelles sécurise les idées et leur donne une crédibilité que la créativité intuitive seule n’aurait pas.</p></div><div class="trace-links"><span class="trace-link empty" title="Dépose ce fichier dans le dépôt puis remplace par un lien">⤓ Case_study_PokeGo.pdf · à déposer</span></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC06</span>
+    <span class="ac-t"><span class="t">Développer un projet de façon proactive</span><div class="s">NutriShot, au-delà des livrables exigés</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Le projet NutriShot, co-fondé avec Alexis Dalmasso et Nathan Livingstone, dépasse le cadre académique : identité de marque complète, pitch deck de 30 slides, modèle financier FISY sur 5 ans et cahier des charges CRM — bien au-delà des livrables formellement demandés.</p></div><div class="bloc"><h4>Démarche &amp; actions</h4><p>Initiatives hors cadre : recherche de fournisseurs et fabricants pour les shots, exploration des certifications et contraintes réglementaires, prospection de distributeurs (pharmacies, click &amp; collect), création d’une charte graphique et d’un logo, rédaction du pitch sans attendre les consignes.</p></div><div class="bloc"><h4>Bilan critique</h4><p>NutriShot est ma démonstration la plus concrète d’une posture entrepreneuriale proactive. Structurer et piloter un projet dans la durée, en anticipant les obstacles et en prenant des initiatives, est la compétence la plus difficile à prouver en formation : ce projet en est la preuve tangible et chiffrée.</p></div><div class="trace-links"><span class="trace-link empty" title="Dépose ce fichier dans le dépôt puis remplace par un lien">⤓ NutriShot_Pitch_deck.pdf · à déposer</span></div></div>
+</details>
+</section>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Stage de 3ᵉ année</p><h2>Stage de 3ᵉ année — LKC</h2><p>Agence de Growth Hacking • Commercial / Prospection • 23 fév. → 31 mai 2026 (14 semaines) • Allauch (13)</p></div>
+    <div class="card">
+      <div class="meta">Tuteur entreprise : Mathias Krarup-Christensen (CEO) · Tuteur enseignant : Mme Marie-Christine Louaisil</div>
+      <p>LKC est une agence de Growth Hacking fondée en 2023, qui vend aux TPE et PME françaises la création ou la refonte de leur site web. Sa promesse : un prototype fonctionnel livré en moins de 48 h, à prix fixe, avant tout acompte — le client voit avant de payer, grâce à l’IA générative côté production.</p><p>J’étais au cœur de l’Outbound Marketing, en haut de la chaîne commerciale : trouver les bonnes entreprises, les qualifier, lancer les séquences de contact et rendre compte des résultats chaque semaine au dirigeant.</p>
+      <div class="problematique"><span class="pq-label">Problématique</span>Dans quelle mesure l’automatisation du processus de prospection commerciale permet-elle à une jeune agence digitale comme LKC d’améliorer la performance de sa qualification de leads tout en maîtrisant ses coûts ?</div>
+      <div class="kpi-grid"><div class="kpi"><div class="kpi-v">60 → 120</div><div class="kpi-l">Leads qualifiés / mois</div></div><div class="kpi"><div class="kpi-v">12 → 3 min</div><div class="kpi-l">Temps par lead</div></div><div class="kpi"><div class="kpi-v">6 % → 11 %</div><div class="kpi-l">Taux de réponse</div></div><div class="kpi"><div class="kpi-v">18 % → 24 %</div><div class="kpi-l">Conversion prototype → signature</div></div><div class="kpi"><div class="kpi-v">− 45 %</div><div class="kpi-l">Coût d’acquisition</div></div><div class="kpi"><div class="kpi-v">165 k€ (+38 %)</div><div class="kpi-l">CA 2025</div></div></div>
+      <div class="ac-body" style="padding:0;margin-top:.4rem"><div class="bloc"><h4>Mission 1 — Construction et pilotage du pipeline de prospection outbound</h4><p>Identification des cibles (Apollo.io, Phantombuster), enrichissement des données (SIRENE, Hunter.io), grille de scoring des leads et gestion du CRM (Notion). Resserrage des critères en cours de stage pour gagner en qualité.</p></div><div class="bloc"><h4>Mission 2 — Automatisation des séquences de qualification</h4><p>Configuration d’Instantly.ai et de n8n (no-code), rédaction de séquences de 3 à 5 emails, A/B testing des objets et messages, segmentation par secteur. Mise en place d’un warm-up de domaine pour protéger la délivrabilité.</p></div><div class="bloc"><h4>Mission 3 — Suivi des performances commerciales et reporting</h4><p>Tableau de bord KPI (Google Sheets), note de synthèse hebdomadaire, reporting oral au dirigeant chaque lundi, et tenue d’un registre des traitements RGPD.</p></div></div>
+      <div class="bloc"><h4>Bilan</h4><p>Ce stage a confirmé et nuancé la formation : les outils vus en cours (CRM, KPI, segmentation, A/B testing) ont trouvé une application directe, mais la réalité d’une micro-agence impose des arbitrages permanents — volume vs qualité, vitesse vs conformité, automatisation vs relation humaine. J’en ressors avec une méthode : diagnostiquer avant d’automatiser, mesurer avant d’optimiser, et questionner ses propres chiffres. J’ai aussi pris en main des outils valorisés sur le marché (Apollo.io, Phantombuster, n8n, Instantly.ai, Hunter.io).</p></div>
+      <div class="trace-links"><span class="trace-link empty" title="Dépose ce fichier dans le dépôt puis remplace par un lien">⤓ Rapport_de_stage_LKC.pdf · à déposer</span></div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <div class="brand" style="font-family:var(--disp);font-weight:800;font-size:1.1rem">Anatole Lodier</div>
+      <div style="margin-top:.4rem">BUT Techniques de Commercialisation — Parcours MDEBE<br>IUT de Toulon · Campus de La Garde</div>
+    </div>
+    <ul class="foot-nav"><li><a href="index.html">Accueil</a></li><li><a href="but1.html">BUT 1</a></li><li><a href="but2.html">BUT 2</a></li><li><a href="but3.html">BUT 3</a></li><li><a href="bilan.html">Bilan &amp; projet</a></li><li><a href="contact.html">Contact</a></li></ul>
+  </div>
+</footer>
+<script>// Menu mobile
+(function(){
+  var t=document.querySelector('.nav-toggle'),l=document.querySelector('.nav-links');
+  if(t&&l){t.addEventListener('click',function(){
+    var o=l.classList.toggle('open');
+    t.setAttribute('aria-expanded',o?'true':'false');
+  });}
+})();
+</script>
+</body>
+</html>

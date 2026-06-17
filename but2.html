@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BUT 2 — Anatole Lodier</title>
+<meta name="description" content="Portfolio de compétences d'Anatole Lodier, BUT3 Techniques de Commercialisation, parcours Marketing Digital, E-Business & Entrepreneuriat (MDEBE), IUT de Toulon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>/* ============================================================
+   Portfolio Anatole Lodier — BUT3 TC / MDEBE
+   Direction : éditorial "dossier de compétences"
+   ============================================================ */
+:root{
+  --ink:#101626;          /* bleu nuit profond */
+  --ink-soft:#37415a;
+  --paper:#f7f5f0;        /* papier chaud */
+  --paper-2:#efece3;
+  --line:#d9d4c7;
+  --blue:#2f4cff;         /* signal numérique */
+  --blue-deep:#1d2bb3;
+  --amber:#ff8a3d;        /* accent niveau */
+  --green:#15795f;
+  --white:#ffffff;
+  --shadow:0 1px 0 rgba(16,22,38,.04), 0 18px 40px -28px rgba(16,22,38,.45);
+  --radius:14px;
+  --maxw:1120px;
+  --serif:"Source Serif 4", Georgia, serif;
+  --disp:"Bricolage Grotesque", system-ui, sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, monospace;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--serif);font-size:18px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+}
+a{color:var(--blue-deep);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--blue)}
+img{max-width:100%}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+/* ---------- Eyebrow / labels ---------- */
+.eyebrow{
+  font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--ink-soft);margin:0 0 .6rem;
+}
+.mono{font-family:var(--mono)}
+
+/* ---------- Header / nav ---------- */
+.site-header{
+  position:sticky;top:0;z-index:50;background:rgba(247,245,240,.86);
+  backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{font-family:var(--disp);font-weight:800;font-size:1.12rem;letter-spacing:-.02em;
+  color:var(--ink);text-decoration:none;display:flex;align-items:baseline;gap:.5rem}
+.brand .tag{font-family:var(--mono);font-size:.62rem;letter-spacing:.12em;color:var(--blue);
+  border:1px solid var(--blue);border-radius:20px;padding:.15rem .5rem;text-transform:uppercase}
+.nav-links{display:flex;gap:.35rem;align-items:center;list-style:none;margin:0;padding:0}
+.nav-links a{
+  font-family:var(--disp);font-weight:600;font-size:.92rem;color:var(--ink-soft);
+  text-decoration:none;padding:.5rem .7rem;border-radius:9px;transition:.18s;
+}
+.nav-links a:hover{background:var(--paper-2);color:var(--ink)}
+.nav-links a.active{color:var(--ink);background:var(--white);box-shadow:var(--shadow)}
+.nav-toggle{display:none;background:none;border:1px solid var(--line);border-radius:9px;
+  width:44px;height:40px;cursor:pointer;align-items:center;justify-content:center}
+.nav-toggle span,.nav-toggle span::before,.nav-toggle span::after{
+  content:"";display:block;width:20px;height:2px;background:var(--ink);position:relative;transition:.2s}
+.nav-toggle span::before{position:absolute;top:-6px}
+.nav-toggle span::after{position:absolute;top:6px}
+
+@media(max-width:880px){
+  .nav-toggle{display:inline-flex}
+  .nav-links{
+    position:absolute;top:68px;left:0;right:0;flex-direction:column;align-items:stretch;
+    gap:0;background:var(--paper);border-bottom:1px solid var(--line);
+    padding:8px 16px 16px;transform:translateY(-12px);opacity:0;pointer-events:none;transition:.2s}
+  .nav-links.open{transform:none;opacity:1;pointer-events:auto}
+  .nav-links a{padding:.8rem .6rem;border-radius:9px}
+}
+
+/* ---------- Hero ---------- */
+.hero{padding:84px 0 64px;position:relative;overflow:hidden}
+.hero .wrap{position:relative;z-index:2}
+.hero h1{
+  font-family:var(--disp);font-weight:800;letter-spacing:-.03em;line-height:1.02;
+  font-size:clamp(2.6rem,7vw,5.2rem);margin:.2rem 0 .4rem;color:var(--ink)}
+.hero h1 .accent{color:var(--blue)}
+.hero .lede{font-size:clamp(1.05rem,2.2vw,1.35rem);max-width:46ch;color:var(--ink-soft);margin:.6rem 0 1.8rem}
+.hero-meta{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2rem}
+.chip{font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;background:var(--white);
+  border:1px solid var(--line);border-radius:30px;padding:.4rem .8rem;color:var(--ink-soft)}
+.hero-grid{position:absolute;inset:0;z-index:1;opacity:.5;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:44px 44px;-webkit-mask-image:radial-gradient(ellipse 80% 60% at 70% 20%,#000,transparent 75%);
+          mask-image:radial-gradient(ellipse 80% 60% at 70% 20%,#000,transparent 75%)}
+.btns{display:flex;flex-wrap:wrap;gap:.8rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--disp);font-weight:600;
+  font-size:.98rem;text-decoration:none;padding:.8rem 1.3rem;border-radius:11px;transition:.18s;border:1px solid transparent}
+.btn-primary{background:var(--ink);color:var(--paper)}
+.btn-primary:hover{background:var(--blue);color:#fff}
+.btn-ghost{background:transparent;border-color:var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--ink);background:var(--white)}
+
+/* ---------- Section ---------- */
+.section{padding:64px 0}
+.section-alt{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.section-dark{background:var(--ink);color:var(--paper-2)}
+.section-dark .eyebrow{color:#9aa6c7}
+.section-dark h2,.section-dark h3{color:#fff}
+.section-head{max-width:60ch;margin-bottom:2.2rem}
+.section-head h2{font-family:var(--disp);font-weight:800;letter-spacing:-.02em;
+  font-size:clamp(1.7rem,4vw,2.6rem);line-height:1.05;margin:.1rem 0 .5rem}
+.section-head p{color:var(--ink-soft);margin:0}
+.section-dark .section-head p{color:#b9c2dc}
+
+/* ---------- Year cards (home) ---------- */
+.years{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:880px){.years{grid-template-columns:1fr}}
+.year-card{display:block;text-decoration:none;color:inherit;background:var(--white);
+  border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);transition:.2s;position:relative}
+.year-card:hover{transform:translateY(-4px);border-color:var(--blue)}
+.year-card .num{font-family:var(--disp);font-weight:800;font-size:3.2rem;line-height:1;color:var(--blue)}
+.year-card h3{font-family:var(--disp);font-size:1.25rem;margin:.6rem 0 .3rem;color:var(--ink)}
+.year-card p{font-size:.95rem;color:var(--ink-soft);margin:0 0 1rem}
+.year-card .go{font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;color:var(--blue-deep);text-transform:uppercase}
+
+/* ---------- Competence block ---------- */
+.comp{margin:0 0 18px;background:var(--white);border:1px solid var(--line);
+  border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.comp-head{padding:24px 26px;border-bottom:1px solid var(--line);display:flex;
+  justify-content:space-between;align-items:flex-start;gap:18px;flex-wrap:wrap}
+.comp-head .titles h3{font-family:var(--disp);font-weight:800;font-size:1.35rem;margin:.2rem 0 .25rem;letter-spacing:-.01em}
+.comp-head .titles .bandeau{color:var(--ink-soft);font-size:.98rem;margin:0;max-width:62ch}
+.level{display:flex;align-items:center;gap:.5rem;flex:none}
+.level-dots{display:flex;gap:5px}
+.dot{width:11px;height:11px;border-radius:50%;border:1.5px solid var(--blue)}
+.dot.on{background:var(--blue)}
+.level-label{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;color:var(--ink-soft);text-transform:uppercase}
+.tag-type{font-family:var(--mono);font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;
+  padding:.25rem .55rem;border-radius:20px;border:1px solid var(--line);color:var(--ink-soft);background:var(--paper)}
+.tag-type.spe{color:var(--blue-deep);border-color:var(--blue);background:#eef0ff}
+
+/* ---------- AC accordion (details/summary) ---------- */
+.ac{border-top:1px solid var(--line)}
+.ac:first-child{border-top:none}
+.ac summary{list-style:none;cursor:pointer;padding:18px 26px;display:flex;gap:16px;align-items:flex-start;
+  transition:background .15s}
+.ac summary::-webkit-details-marker{display:none}
+.ac summary:hover{background:var(--paper)}
+.ac .ac-no{font-family:var(--mono);font-size:.8rem;color:var(--blue);font-weight:700;padding-top:.15rem;flex:none}
+.ac .ac-t{flex:1}
+.ac .ac-t .t{font-family:var(--disp);font-weight:600;font-size:1.04rem;color:var(--ink);line-height:1.3}
+.ac .ac-t .s{font-size:.9rem;color:var(--ink-soft);margin-top:.15rem}
+.ac .chev{flex:none;width:22px;height:22px;border-radius:6px;border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;transition:.2s;color:var(--ink-soft);font-size:.8rem}
+.ac[open] .chev{transform:rotate(90deg);border-color:var(--blue);color:var(--blue)}
+.ac-body{padding:4px 26px 26px;border-top:1px dashed var(--line);margin-top:-1px}
+.ac-body .bloc{margin-top:18px}
+.ac-body .bloc h4{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--blue-deep);margin:0 0 .4rem}
+.ac-body .bloc p{margin:0 0 .5rem}
+.ac-body .bloc .bullet{margin:.15rem 0 .15rem;padding-left:1.1rem;position:relative;color:var(--ink-soft)}
+.ac-body .bloc .bullet::before{content:"›";position:absolute;left:0;color:var(--blue)}
+.trace-links{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:18px}
+.trace-link{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--disp);font-weight:600;
+  font-size:.88rem;text-decoration:none;background:var(--ink);color:var(--paper);padding:.55rem .9rem;border-radius:9px;transition:.18s}
+.trace-link:hover{background:var(--blue);color:#fff}
+.trace-link.empty{background:var(--paper-2);color:var(--ink-soft);border:1px dashed var(--line)}
+
+/* ---------- Gabarit (BUT3) ---------- */
+.todo{display:inline-block;font-family:var(--mono);font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--amber);border:1px solid var(--amber);border-radius:20px;padding:.18rem .5rem;margin-left:.5rem;vertical-align:middle}
+.gabarit{background:#fffaf4;border:1px solid #f3dcc4;border-radius:10px;padding:16px 18px;margin-top:16px}
+.gabarit h4{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:#b5611e;margin:.2rem 0 .15rem}
+.gabarit p{margin:0 0 .9rem;color:var(--ink-soft);font-size:.95rem}
+.gabarit p:last-child{margin-bottom:0}
+
+/* ---------- Stage / generic card ---------- */
+.card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px;box-shadow:var(--shadow)}
+.card h3{font-family:var(--disp);font-weight:800;font-size:1.3rem;margin:.1rem 0 .3rem}
+.card .meta{font-family:var(--mono);font-size:.76rem;letter-spacing:.06em;color:var(--blue-deep);text-transform:uppercase;margin-bottom:1rem}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:760px){.grid-2{grid-template-columns:1fr}}
+
+/* ---------- Skills ---------- */
+.skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:880px){.skill-grid{grid-template-columns:1fr}}
+.skill{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:20px}
+.skill h4{font-family:var(--disp);font-weight:700;font-size:1.05rem;margin:0 0 .35rem;color:var(--ink)}
+.skill p{margin:0;font-size:.92rem;color:var(--ink-soft)}
+.htable{width:100%;border-collapse:collapse;background:var(--white);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.htable th,.htable td{text-align:left;padding:14px 16px;border-bottom:1px solid var(--line);vertical-align:top;font-size:.94rem}
+.htable th{font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);background:var(--paper)}
+.htable td:first-child{font-family:var(--disp);font-weight:600;color:var(--ink)}
+.langs{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:16px}
+.lang{font-family:var(--mono);font-size:.82rem;background:var(--white);border:1px solid var(--line);
+  border-radius:30px;padding:.4rem .85rem}
+.lang b{color:var(--blue-deep)}
+
+/* ---------- Progression (bilan) ---------- */
+.prog{display:grid;gap:14px}
+.prog-row{display:grid;grid-template-columns:170px 1fr;gap:18px;align-items:center;
+  background:var(--white);border:1px solid var(--line);border-radius:12px;padding:16px 20px}
+@media(max-width:680px){.prog-row{grid-template-columns:1fr}}
+.prog-row .dom{font-family:var(--disp);font-weight:700;font-size:1.05rem}
+.prog-steps{display:flex;align-items:center;gap:0}
+.step{flex:1;display:flex;align-items:center}
+.step .b{font-family:var(--mono);font-size:.72rem;text-align:center;padding:.45rem .3rem;border-radius:8px;
+  border:1px solid var(--line);background:var(--paper);width:100%;color:var(--ink-soft)}
+.step .b.has{background:var(--blue);color:#fff;border-color:var(--blue)}
+.step .b.spe{background:var(--ink);color:#fff;border-color:var(--ink)}
+.step .arr{color:var(--line);padding:0 .4rem;flex:none}
+
+/* ---------- Footer ---------- */
+.site-footer{background:var(--ink);color:#aeb7d2;padding:46px 0;font-size:.92rem}
+.site-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
+.site-footer a{color:#cdd4e8}
+.site-footer .brand{color:#fff}
+.foot-nav{display:flex;flex-wrap:wrap;gap:1rem;list-style:none;margin:0;padding:0;font-family:var(--disp);font-size:.9rem}
+
+/* ---------- Contact ---------- */
+.contact-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:24px}
+@media(max-width:760px){.contact-grid{grid-template-columns:1fr}}
+.cline{display:flex;gap:.7rem;align-items:baseline;margin:.2rem 0;font-size:1.05rem}
+.cline .k{font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);min-width:90px}
+
+/* ---------- intro paragraph for comp pages ---------- */
+.page-intro{max-width:64ch;font-size:1.1rem;color:var(--ink-soft);margin:0 0 2.4rem}
+
+/* ---------- Stage BUT3 : KPI + problématique ---------- */
+.problematique{background:var(--paper);border-left:3px solid var(--blue);border-radius:0 10px 10px 0;
+  padding:14px 18px;margin:16px 0;font-size:1.02rem;color:var(--ink)}
+.pq-label{display:block;font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--blue-deep);margin-bottom:.35rem}
+.kpi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0 8px}
+@media(max-width:680px){.kpi-grid{grid-template-columns:1fr 1fr}}
+.kpi{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.kpi-v{font-family:var(--disp);font-weight:800;font-size:1.4rem;color:var(--blue-deep);line-height:1.1}
+.kpi-l{font-family:var(--mono);font-size:.68rem;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-soft);margin-top:.3rem}
+
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px;border-radius:4px}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Anatole Lodier <span class="tag">BUT3 · TC</span></a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span></button>
+    <ul class="nav-links"><li><a href="index.html">Accueil</a></li><li><a href="but1.html">BUT 1</a></li><li><a href="but2.html" class="active">BUT 2</a></li><li><a href="but3.html">BUT 3</a></li><li><a href="bilan.html">Bilan &amp; projet</a></li><li><a href="contact.html">Contact</a></li></ul>
+  </div>
+</header>
+<main>
+
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">Année 2 · BUT 2</p>
+    <h1 style="font-family:var(--disp);font-weight:800;letter-spacing:-.02em;font-size:clamp(2rem,5vw,3.2rem);margin:.1rem 0 .8rem">Compétences BUT 2</h1>
+    <p class="page-intro">Le passage à l’environnement complexe : stratégie, négociation, plans de communication 360°, et l’ouverture des deux domaines de spécialité — marketing digital et e-business. Traces structurées contexte / actions / résultats / analyse critique.</p>
+    <section class="comp">
+  <div class="comp-head">
+    <div class="titles"><p class="eyebrow">Compétence · Marketing</p><h3>Marketing</h3><p class="bandeau">Construire une offre commerciale complexe</p></div>
+    <div style="display:flex;flex-direction:column;align-items:flex-end;gap:.6rem"><div class="level"><span class="level-label">Niveau</span><div class="level-dots"><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div></div>
+  </div>
+  <details class="ac">
+  <summary><span class="ac-no">AC01</span>
+    <span class="ac-t"><span class="t">Diagnostiquer l’environnement en appréhendant les enjeux sociaux et écologiques</span><div class="s">Gestion durable des matières premières et des énergies</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Travail de groupe en économie (S3) répondant à la problématique : « Comment aller vers une gestion durable des matières premières et des énergies au niveau mondial ? ». Étude des facteurs environnementaux, économiques et géopolitiques pesant sur les stratégies des entreprises.</p></div><div class="bloc"><h4>Actions menées</h4><p>Recherche documentaire sur les ressources critiques et la transition énergétique, structurée en quatre axes :</p><div class="bullet">Optimisation des chaînes d’approvisionnement</div><div class="bullet">Innovation technologique et économie circulaire</div><div class="bullet">Politiques internationales et gouvernance des ressources</div><div class="bullet">Transition énergétique et énergies renouvelables</div><p>Analyse appuyée sur des indicateurs concrets (part du recyclage, dépendance aux terres rares, consommation de charbon…).</p></div><div class="bloc"><h4>Résultats</h4><p>Diaporama structuré présenté à l’oral, démontrant la capacité à identifier les tendances majeures et à en tirer des enseignements stratégiques. Clarté de structure et pertinence des données chiffrées soulignées par l’enseignant.</p></div><div class="bloc"><h4>Points forts</h4><p>Veille rigoureuse et à jour ; articulation claire entre enjeux politiques, technologiques et économiques ; réponse synthétique et argumentée.</p></div><div class="bloc"><h4>Axes d’amélioration</h4><p>Approfondir les enjeux sociaux (impacts sur les populations, inégalités d’accès) ; illustrer davantage par des graphiques ou cartographies.</p></div><div class="bloc"><h4>Trace commentée</h4><p>Diaporama de novembre 2024 : la diapositive sur l’économie circulaire dans l’automobile montre comment l’éco-conception vise à réduire l’extraction de ressources vierges.</p></div><div class="bloc"><h4>Approche critique</h4><p>Projet solide pour croiser dimensions écologique, économique et politique. Pour valider pleinement la compétence, la transposer à un contexte plus opérationnel (étude de marché avec variables RSE, ou stage en entreprise engagée).</p></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC02</span>
+    <span class="ac-t"><span class="t">Mettre en œuvre une étude de marché dans un environnement complexe</span><div class="s">SAÉ « LAMA France » — biscuits artisanaux</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>SAÉ de création d’entreprise fictive (S3) : concevoir une marque de biscuits artisanaux. L’étude de marché est la première étape pour fonder la stratégie sur des données concrètes.</p></div><div class="bloc"><h4>Actions menées</h4><p>Étude documentaire approfondie du marché des biscuits : segments (sucré/salé, bio, sans gluten), tendances (sain, naturel, végétal), concurrence (acteurs dominants, MDD, marques locales), comportements des cibles. Sources : Statista, NielsenIQ, Les Échos, Xerfi. Résultats utilisés pour cibler, positionner et définir la distribution.</p></div><div class="bloc"><h4>Résultats</h4><p>Étude devenue le socle des décisions : gamme adaptée (bio, local, sans gluten), positionnement prix accessible mais qualitatif, distribution hybride en ligne + points de vente, communication digitale ciblée. Travail salué pour la qualité des sources et la cohérence du mix.</p></div><div class="bloc"><h4>Points forts</h4><p>Structuration claire (segment, acteur, tendance, cible) ; veille rigoureuse et actuelle ; application pertinente des résultats.</p></div><div class="bloc"><h4>Axes d’amélioration</h4><p>Absence d’enquête terrain (questionnaire, entretiens) ; approfondir les freins à l’achat et les critères de différenciation perçus.</p></div><div class="bloc"><h4>Trace commentée</h4><p>Dossier « Compétence 2 – LAMA France » : partie dédiée à l’étude sectorielle (fiche concurrentielle, analyse des tendances).</p></div><div class="bloc"><h4>Approche critique</h4><p>Analyse documentaire solide mais partielle sur le terrain. Intégrer des données primaires (quanti/quali) renforcerait la fiabilité du diagnostic.</p></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC03</span>
+    <span class="ac-t"><span class="t">Mettre en place une stratégie marketing dans un environnement complexe</span><div class="s">Projet « Remake » — collecte de leads</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Projet Remake, boutique de personnalisation textile à Montpellier : élaborer une stratégie de collecte de leads adaptée à une cible jeune, urbaine et digitalisée.</p></div><div class="bloc"><h4>Actions menées</h4><p>Stratégie multicanale :</p><div class="bullet">Jeu concours Instagram avec formulaire de collecte d’e-mails</div><div class="bullet">QR code en boutique pour l’inscription en point de vente</div><div class="bullet">Chatbot interactif (quizz contre une adresse e-mail)</div><div class="bullet">Newsletter à avantages exclusifs</div><div class="bullet">Partenariats avec des micro-influenceurs locaux</div><p>Réflexion sur des canaux complémentaires (TikTok, mailing/SMS) et optimisation du site vitrine.</p></div><div class="bloc"><h4>Résultats</h4><p>Approche cohérente, alignée sur le positionnement milieu de gamme et les usages de la cible. Chatbot et quizz testés et optimisés pour réduire les frictions ; indicateurs de suivi (engagement, clics, conversion) maîtrisés.</p></div><div class="bloc"><h4>Points forts</h4><p>Cohérence canaux/ton/cible/objectif ; leviers originaux et accessibles ; bonne anticipation de la performance.</p></div><div class="bloc"><h4>Axes d’amélioration</h4><p>Budget de mise en œuvre à détailler ; intégrer davantage de différenciateurs durables (RSE, production locale).</p></div><div class="bloc"><h4>Trace commentée</h4><p>Dossier « Compétence 3 – Remake » : actions ciblées, programmation du chatbot, stratégie d’influence locale.</p></div><div class="bloc"><h4>Approche critique</h4><p>Idéation et planification solides ; à renforcer par une mise en œuvre réelle et des résultats chiffrés. Le projet montre déjà une maîtrise des mécanismes du digital, de la notoriété à la conversion.</p></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC04</span>
+    <span class="ac-t"><span class="t">Concevoir un mix étendu pour une offre complexe</span><div class="s">Packaging — gammes « LAMA France »</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>SAÉ LAMA France (S3) : travailler en profondeur l’ensemble des variables du mix étendu, en particulier le packaging comme interface produit/consommateur.</p></div><div class="bloc"><h4>Actions menées</h4><p>Déclinaison de trois gammes (Galetitas, Frutitas, Stick), chacune avec un packaging adapté : matériaux selon l’usage (souple, rigide, recyclable), formes facilitant transport et conservation, systèmes d’ouverture pratiques (zip, glissière, rabat), graphisme et codes couleur liés au positionnement (mascotte Lama, teintes vives). Intégration des variables distribution, communication, UX packaging et durabilité.</p></div><div class="bloc"><h4>Résultats</h4><p>Différenciation renforcée tout en gardant la cohérence de marque : le packaging devient un levier marketing à part entière (Frutitas ludique/écoresponsable, Galetitas souple/coloré, Stick classique/robuste).</p></div><div class="bloc"><h4>Points forts</h4><p>Démarche complète (forme, fonction, positionnement) ; bonne segmentation du mix par produit ; réflexion poussée sur matériaux et durabilité.</p></div><div class="bloc"><h4>Axes d’amélioration</h4><p>Ajouter des tests consommateurs simulés ; approfondir l’analyse coût/efficacité du mix.</p></div><div class="bloc"><h4>Trace commentée</h4><p>Fichier « Compétence 4 » : trois concepts de packaging détaillés, avec les choix marketing associés.</p></div><div class="bloc"><h4>Approche critique</h4><p>Excellente réflexion stratégique appliquée. Une modélisation financière ou un benchmark renforcerait encore les choix.</p></div></div>
+</details>
+</section><section class="comp">
+  <div class="comp-head">
+    <div class="titles"><p class="eyebrow">Compétence · Vente</p><h3>Vente</h3><p class="bandeau">Vendre une offre commerciale complexe</p></div>
+    <div style="display:flex;flex-direction:column;align-items:flex-end;gap:.6rem"><div class="level"><span class="level-label">Niveau</span><div class="level-dots"><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div></div>
+  </div>
+  <details class="ac">
+  <summary><span class="ac-no">AC01</span>
+    <span class="ac-t"><span class="t">Convaincre en exprimant avec empathie l’offre en termes d’avantages personnalisés</span><div class="s">Jeu de rôle — LU vs Carrefour (méthode DESC)</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Jeu de rôle de négociation (TD vente) : cas fictif LU (fournisseur) / Carrefour (distributeur), où chaque binôme défend les intérêts de son entreprise.</p></div><div class="bloc"><h4>Actions menées</h4><p>Dans le rôle de Paul (commercial LU) face à un refus de hausse tarifaire, application de la méthode DESC : Décrire les faits, Exprimer un ressenti, proposer une Solution acceptable, Conclure sur les bénéfices communs. Recherche d’un compromis gagnant-gagnant (hausse progressive + promotions) en valorisant la relation long terme.</p></div><div class="bloc"><h4>Résultats</h4><p>Accord de principe sur une hausse échelonnée associée à des actions promotionnelles. Négociation jugée réussie : écoute active, valorisation de l’offre par la qualité et la continuité d’approvisionnement, posture constructive.</p></div><div class="bloc"><h4>Points forts</h4><p>Méthode DESC rigoureuse ; posture empathique et professionnelle ; solutions personnalisées.</p></div><div class="bloc"><h4>Axes d’amélioration</h4><p>Préciser certains avantages produit ; appuyer par un argumentaire chiffré (coûts, ROI des promotions).</p></div><div class="bloc"><h4>Trace commentée</h4><p>Dialogue reconstitué (« Compétence 1 ») : progression logique de la négociation et adaptation aux contraintes de l’acheteur.</p></div><div class="bloc"><h4>Approche critique</h4><p>Posture commerciale centrée client à consolider en situation réelle (stage, alternance), en intégrant davantage d’éléments financiers.</p></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC02</span>
+    <span class="ac-t"><span class="t">Négocier le prix : défendre et valoriser l’offre en percevant les stratégies d’achat</span><div class="s">Jeu de rôle — Legrand (domotique Céliane)</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Jeu de rôle en TD : vendeur Legrand face à un acheteur exigeant du secteur immobilier, autour de l’intégration d’une solution domotique (Céliane) — enjeux prix, délais, différenciation, logistique.</p></div><div class="bloc"><h4>Actions menées</h4><p>Face aux stratégies d’achat (mise en concurrence, pression sur les délais, volume, conditions contractuelles), défense de l’offre par : valorisation des avantages différenciants (écoconception, intégration simple, contrôle à distance), solutions logistiques solides, compromis tarifaire au volume, posture ferme mais adaptable sans brader la valeur.</p></div><div class="bloc"><h4>Résultats</h4><p>Accord de principe sous validation contractuelle. L’acheteur reconnaît la pertinence des arguments (qualité, service, délais) malgré la concurrence prix ; équilibre 50/50 reflétant une relation de confiance.</p></div><div class="bloc"><h4>Points forts</h4><p>Bonne lecture des leviers d’achat ; défense du prix par la valeur globale ; conclusion diplomate.</p></div><div class="bloc"><h4>Axes d’amélioration</h4><p>Argumentaire financier chiffré (ROI, économies long terme) ; valider en amont les conditions contractuelles.</p></div><div class="bloc"><h4>Trace commentée</h4><p>Fichier « Compétence 2 » : stratégies d’achat identifiées (prix, temps, choix, poids) et réponses du vendeur.</p></div><div class="bloc"><h4>Approche critique</h4><p>Maîtrise de la négociation complexe : défendre la valeur plus que baisser le prix. À renforcer par la dimension financière chiffrée.</p></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC03</span>
+    <span class="ac-t"><span class="t">Maîtriser les éléments juridiques et comptables de l’offre</span><div class="s">Choix du statut juridique — LAMA France</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>SAÉ de création d’entreprise LAMA France (S3) : définir le statut juridique pour construire une offre crédible et réaliste (biscuiterie artisanale).</p></div><div class="bloc"><h4>Actions menées</h4><p>Étude de plusieurs formes (auto-entreprise, SARL, SAS…) au regard de l’ambition collective, de la gouvernance à plusieurs associés et de la répartition des responsabilités. Choix de la SAS pour sa souplesse, la limitation de responsabilité et la répartition des rôles. Intégration dans la présentation globale de l’offre.</p></div><div class="bloc"><h4>Résultats</h4><p>Cadre juridique renforçant la crédibilité du projet et anticipant statut fiscal, responsabilité et capital social.</p></div><div class="bloc"><h4>Points forts</h4><p>Articulation choix juridiques / stratégie commerciale ; répartition fonctionnelle claire entre associés.</p></div><div class="bloc"><h4>Axes d’amélioration</h4><p>Comparaison plus riche des statuts ; appui sur des sources externes (juristes, simulateurs).</p></div><div class="bloc"><h4>Trace commentée</h4><p>Fiche projet LAMA France : section dédiée à la forme juridique retenue et justifiée.</p></div><div class="bloc"><h4>Approche critique</h4><p>Compétence abordée de façon appliquée malgré des connaissances juridiques limitées. Indissociable de l’offre commerciale, à approfondir en milieu professionnel.</p></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC04</span>
+    <span class="ac-t"><span class="t">Utiliser les OAV (feuille de calcul, supports d’argumentation…) à bon escient pour convaincre</span><div class="s">Facture détaillée — cas ELIS (B2B)</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Simulation commerciale B2B avec ELIS (location-entretien de vêtements professionnels) : élaborer une facture détaillée en appui d’un échange avec un laboratoire client.</p></div><div class="bloc"><h4>Actions menées</h4><p>Production d’une facture professionnelle structurée : désignation des produits (tenues homme/femme, couleurs, changements), quantités, tarifs unitaires, coût hebdomadaire, total mensuel et coûts additionnels. La facture sert de support d’argumentation chiffrée (justifier les coûts, montrer la transparence, appuyer la valeur du service).</p></div><div class="bloc"><h4>Résultats</h4><p>Outil permettant de convaincre par des éléments objectifs (prix, volume, fréquence, fiabilité), de valider les engagements et de réduire les incompréhensions. Travail jugé professionnel et adapté à une relation B2B exigeante.</p></div><div class="bloc"><h4>Points forts</h4><p>Présentation conforme aux standards ; précision des données ; usage pertinent d’un document de preuve.</p></div><div class="bloc"><h4>Axes d’amélioration</h4><p>Ajouter un récapitulatif visuel (tableau de synthèse) ; simuler une remise ou une option complémentaire.</p></div><div class="bloc"><h4>Trace commentée</h4><p>Facture n°100 – ELIS (« Compétence 4 ») : mobilisation d’un OAV en situation commerciale simulée.</p></div><div class="bloc"><h4>Approche critique</h4><p>Importance des supports chiffrés en B2B. À l’avenir, croiser plusieurs OAV (présentation, tableaux comparatifs, simulateurs de coûts).</p></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC05</span>
+    <span class="ac-t"><span class="t">Organiser le suivi de ses résultats pour gagner en performance au sein de l’équipe commerciale</span><div class="s">Jeu d’entreprise « Vélix » (B2BIKE)</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Simulation Vélix : gérer une entreprise de vélos sur plusieurs périodes (D1 à D5), chaque décision impactant les indicateurs de performance à suivre et exploiter collectivement.</p></div><div class="bloc"><h4>Actions menées</h4><p>Suivi des indicateurs clés (CA, ventes, résultat net, part de marché, trésorerie, capitaux propres), mise à jour des graphiques à chaque décision, analyse de l’évolution pour ajuster la stratégie. Exemple : face à un résultat net négatif en D1-D2, révision de la stratégie tarifaire et des dépenses marketing.</p></div><div class="bloc"><h4>Résultats</h4><p>Progression : CA de 1,1 M€ à 5,4 M€ ; résultat net de –75 k€ à +569 k€ ; +5 points de part de marché ; +1,1 M€ de capitaux propres sur 5 périodes.</p></div><div class="bloc"><h4>Points forts</h4><p>Suivi visuel et chiffré efficace ; adaptabilité stratégique ; rigueur de lecture des résultats.</p></div><div class="bloc"><h4>Axes d’amélioration</h4><p>Automatiser les tableaux de bord (Excel dynamique) ; rédiger un rapport d’analyse post-jeu.</p></div><div class="bloc"><h4>Trace commentée</h4><p>Fichier « Compétence 5 » : résultats consolidés du jeu (données chiffrées et graphiques).</p></div><div class="bloc"><h4>Approche critique</h4><p>Importance d’un suivi rigoureux et du lien données / décisions. À développer : tableaux de bord, reporting commercial et interprétation des KPI.</p></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC06</span>
+    <span class="ac-t"><span class="t">Prendre en compte les enjeux de la fonction achat pour la performance économique de l’entreprise</span><div class="s">Jeu d’entreprise « Vélix » — fonction achat</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Simulation Vélix : intégrer coûts d’achat, sous-traitance, stockage et distribution, ainsi que l’impact de la qualité et des délais sur la performance globale.</p></div><div class="bloc"><h4>Actions menées</h4><p>Analyse de variables achat : coûts matières (40 € à 550 €), surcoûts qualité (jusqu’à +50 %), frais de sous-traitance/stockage/distribution, crédits fournisseurs (15 à 30 j), demande prévisionnelle par segment. Décisions : éviter la surproduction, optimiser le rapport coût/qualité par segment, mettre en avant les produits à fort potentiel de marge.</p></div><div class="bloc"><h4>Résultats</h4><p>Rentabilité nette améliorée dès la 3ᵉ période, gain de liquidité par maîtrise des coûts et des stocks, offre ajustée aux évolutions de la demande.</p></div><div class="bloc"><h4>Points forts</h4><p>Bonne lecture des coûts directs et indirects ; réflexion sur les leviers de marge ; intégration du crédit fournisseur dans la trésorerie.</p></div><div class="bloc"><h4>Axes d’amélioration</h4><p>Approfondir les coûts logistiques et frais de structure ; formaliser un process d’optimisation achat (Excel).</p></div><div class="bloc"><h4>Trace commentée</h4><p>Document « Compétence 6 » : données techniques de décision (coûts, cycles de vie, qualité, demande).</p></div><div class="bloc"><h4>Approche critique</h4><p>La fonction achat est un levier stratégique de rentabilité, pas un acte administratif. À approfondir avec des outils professionnels d’analyse des coûts.</p></div></div>
+</details>
+</section><section class="comp">
+  <div class="comp-head">
+    <div class="titles"><p class="eyebrow">Compétence · Communication</p><h3>Communication</h3><p class="bandeau">Élaborer une communication commerciale complexe</p></div>
+    <div style="display:flex;flex-direction:column;align-items:flex-end;gap:.6rem"><div class="level"><span class="level-label">Niveau</span><div class="level-dots"><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div></div>
+  </div>
+  <details class="ac">
+  <summary><span class="ac-no">AC01</span>
+    <span class="ac-t"><span class="t">Élaborer une stratégie de communication adaptée au brief agence</span><div class="s">SAÉ « Adopte » — spot publicitaire (CreaNova)</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>SAÉ Adopte : répondre à un brief agence en concevant un scénario de spot publicitaire cohérent avec les valeurs, le ton, la cible et le positionnement de la marque. Histoire narrative autour de la danse (passion, séduction, compétition).</p></div><div class="bloc"><h4>Actions menées</h4><p>Analyse du brief (cible, objectifs de notoriété et d’image, message), recherche du concept créatif, écriture du synopsis et conception du schéma narratif (situation initiale, élément perturbateur, péripéties, résolution, situation finale). Cadre choisi : un club de danse colombien, trois amis rivalisant pour une danse.</p></div><div class="bloc"><h4>Résultats</h4><p>Spot répondant pleinement au brief : histoire claire et dynamique, transposable en vidéo, renforçant le positionnement. Proposition retenue parmi les plus abouties du TD.</p></div><div class="bloc"><h4>Points forts</h4><p>Structuration narrative solide ; cohérence brief/concept/cible ; implication collective.</p></div><div class="bloc"><h4>Axes d’amélioration</h4><p>Lien produit/marque plus explicite dans la résolution ; angle culturel ou émotionnel plus différenciant.</p></div><div class="bloc"><h4>Trace commentée</h4><p>Livrable « Compétence 1 » : synopsis publicitaire et schéma narratif complet.</p></div><div class="bloc"><h4>Approche critique</h4><p>Répondre à un brief, c’est traduire un objectif stratégique en langage créatif. Plus à l’aise avec les attentes d’un commanditaire et la logique d’un dispositif narratif orienté marque.</p></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC02</span>
+    <span class="ac-t"><span class="t">Établir une stratégie de moyens en utilisant les indicateurs de choix des supports</span><div class="s">TD média — sélection chiffrée des supports</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>TD de communication média (M. Benaissati) : choisir les supports les plus pertinents et rentables pour une cible donnée, à partir de critères chiffrés.</p></div><div class="bloc"><h4>Actions menées</h4><p>Analyse de plusieurs supports (réseaux sociaux, e-mailing, affichage, sponsoring, marketing d’influence, presse spécialisée, TV locale) en calculant pour chacun : coût pour mille (CPM), puissance brute/nette, affinité, audience utile et rentabilité par rapport au budget.</p></div><div class="bloc"><h4>Résultats</h4><p>Recommandation d’une combinaison à forte affinité et exposition utile, dans le budget : réseaux sociaux (puissance brute), influence (affinité), e-mailing (coût bas, précision), en évitant les supports peu performants (TV locale).</p></div><div class="bloc"><h4>Points forts</h4><p>Maîtrise des KPI média ; hiérarchisation des supports ; application concrète des données.</p></div><div class="bloc"><h4>Axes d’amélioration</h4><p>Intégrer une dimension qualitative (image véhiculée) ; prendre en compte le rythme de diffusion et la saisonnalité.</p></div><div class="bloc"><h4>Trace commentée</h4><p>Fichier « Compétence 2 » : analyse comparative chiffrée (coûts, performances, audiences utiles).</p></div><div class="bloc"><h4>Approche critique</h4><p>Un bon plan média repose sur des données mesurables, pas sur l’intuition. Capacité à justifier un choix de support par des critères de performance.</p></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC03</span>
+    <span class="ac-t"><span class="t">Proposer un plan de communication 360° en élaborant les supports et en veillant à leur efficacité</span><div class="s">SAÉ « Delightz » — communication intégrée</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>SAÉ Delightz : concevoir une stratégie 360° combinant canaux offline et online pour une marque d’éclairage design, sur des publics variés tout au long de l’année.</p></div><div class="bloc"><h4>Actions menées</h4><p>Volet offline : publipostage zones rurales, affichage urbain rétroéclairé, spots TV (TF1, M6) et placements, salons (Maison &amp; Objet, ÉquipBaie), street marketing lumineux, sponsoring sportif. Volet online : display (Google, Meta, TikTok) avec reciblage, influence (TikTok, Instagram), fidélisation (newsletters, points, parrainage). Chaque canal choisi selon objectifs, saisonnalité et affinité cible.</p></div><div class="bloc"><h4>Résultats</h4><p>Plan permettant de toucher des publics larges mais ciblés, créant répétition et cohérence visuelle et renforçant une image innovante et accessible.</p></div><div class="bloc"><h4>Points forts</h4><p>Couverture online + offline complète ; adaptation aux temporalités ; actions diversifiées et engageantes.</p></div><div class="bloc"><h4>Axes d’amélioration</h4><p>Ajouter des KPI chiffrés (reach, CTR, conversion) ; détailler un budget prévisionnel par action.</p></div><div class="bloc"><h4>Trace commentée</h4><p>Fichier « Compétence 3 » : plan multicanal (objectifs, périodes, cibles, canaux).</p></div><div class="bloc"><h4>Approche critique</h4><p>Vraie vision d’ensemble de la communication de marque ; importance d’articuler les canaux de façon complémentaire et de mesurer la performance.</p></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC04</span>
+    <span class="ac-t"><span class="t">Mettre en œuvre une stratégie digitale (blog, réseaux sociaux, influenceurs) en mesurant les performances et l’e-réputation</span><div class="s">SAÉ « Delightz » — écosystème digital</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>SAÉ Delightz : créer un site e-commerce et un écosystème digital pour une marque de néons LED personnalisables (plateforme responsive, SEO, UX, contenus, suivi statistique, gestion de réputation).</p></div><div class="bloc"><h4>Actions menées</h4><p>Rédaction du cahier des charges digital (périmètre, contraintes techniques, UX/UI, canaux, objectifs) ; définition des contenus (blog/stories déco, vidéos, espace client) ; anticipation de l’e-réputation (avis, modération) ; outils de suivi (clics, visites, engagement, abandon panier) ; approche SEO-friendly et fidélisation (notifications, comptes clients).</p></div><div class="bloc"><h4>Résultats</h4><p>Vision claire de la stratégie digitale, intégration fluide e-commerce/communication, prise en compte de l’UX et des enjeux techniques de performance.</p></div><div class="bloc"><h4>Points forts</h4><p>Vision stratégique globale ; articulation contenus/outils/suivi ; e-réputation intégrée dès la conception.</p></div><div class="bloc"><h4>Axes d’amélioration</h4><p>Développer la stratégie réseaux sociaux (types de contenus, fréquence, influenceurs) ; fixer des KPI chiffrés.</p></div><div class="bloc"><h4>Trace commentée</h4><p>Fichier « Compétence 4 » : dispositif digital intégré (site, contenus, gestion client, e-réputation, analytics).</p></div><div class="bloc"><h4>Approche critique</h4><p>La communication digitale suppose une vision complète, du site aux données utilisateurs, sans négliger l’anticipation technique (maintenance, hébergement, sécurité).</p></div></div>
+</details>
+</section><section class="comp">
+  <div class="comp-head">
+    <div class="titles"><p class="eyebrow">Compétence · E-Business &amp; Entrepreneuriat</p><h3>E-Business &amp; Entrepreneuriat</h3><p class="bandeau">Participer à un projet e-business</p></div>
+    <div style="display:flex;flex-direction:column;align-items:flex-end;gap:.6rem"><div class="level"><span class="level-label">Niveau</span><div class="level-dots"><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div><span class="tag-type spe">Spécifique parcours MDEBE</span></div>
+  </div>
+  <details class="ac">
+  <summary><span class="ac-no">AC01</span>
+    <span class="ac-t"><span class="t">Concevoir un modèle d’affaires simplifié</span><div class="s">Business Model Canvas — designer indépendant</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Atelier (M. Mora) : représenter visuellement le fonctionnement économique d’un projet entrepreneurial — ici un indépendant en design graphique — via un Business Model Canvas.</p></div><div class="bloc"><h4>Actions menées</h4><p>Mobilisation des blocs du canvas : segments clients (entreprises, indépendants, agences), proposition de valeur (créations différenciantes, storytelling, accompagnement sur mesure), canaux, relations clients, sources de revenus, partenaires, ressources et activités clés, structure de coûts.</p></div><div class="bloc"><h4>Résultats</h4><p>Offre professionnelle structurée autour de mes compétences, leviers de valeur et ressources identifiés, canaux pertinents repérés, dépenses et revenus clarifiés. Base exploitable pour un projet freelance.</p></div><div class="bloc"><h4>Points forts</h4><p>Maîtrise de la logique du modèle économique ; clarté de la segmentation et de la proposition de valeur ; réalisme des coûts/revenus.</p></div><div class="bloc"><h4>Axes d’amélioration</h4><p>Ajouter un chiffrage prévisionnel (mini business plan) ; tester certaines hypothèses sur le terrain.</p></div><div class="bloc"><h4>Trace commentée</h4><p>Fichier « Compétence 1 » : le Business Model Canvas conçu en atelier.</p></div><div class="bloc"><h4>Approche critique</h4><p>Passage d’une idée générale à une modélisation opérationnelle ; importance de penser un projet dans sa globalité (client, valeur, distribution, rentabilité).</p></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC02</span>
+    <span class="ac-t"><span class="t">Analyser la situation marché-entreprise grâce aux outils de diagnostic stratégique</span><div class="s">Projet « NutriGo » — nutrition sportive</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Projet NutriGo (entreprise fictive de nutrition sportive) : analyser le marché cible, la situation de l’entreprise, ses opportunités et menaces, et modéliser son fonctionnement (chaîne de valeur de Porter, Business Model Canvas).</p></div><div class="bloc"><h4>Actions menées</h4><p>Étude documentaire (croissance, tendances, comportements, réglementation), segmentation clientèle (sportifs, jeunes actifs, cadres, familles), chaîne de valeur de Porter (activités clés et de soutien), diagnostic interne/externe (ressources, compétences clés) et modélisation économique via le canvas.</p></div><div class="bloc"><h4>Résultats</h4><p>Identification des facteurs clés de succès (produits innovants, SAV premium, app mobile, logistique), d’axes de différenciation et d’une vision cohérente à court/moyen/long terme. Bases d’un business plan solide.</p></div><div class="bloc"><h4>Points forts</h4><p>Usage rigoureux des outils (Porter, BMC) ; synthèse des données marché ; cohérence analyse/choix/vision.</p></div><div class="bloc"><h4>Axes d’amélioration</h4><p>Ajouter une matrice SWOT visuelle ; renforcer le diagnostic financier (ratios, budget prévisionnel).</p></div><div class="bloc"><h4>Trace commentée</h4><p>Livrable « Compétence 2 » : analyse stratégique complète (chaîne de valeur, canvas, cibles, stratégies).</p></div><div class="bloc"><h4>Approche critique</h4><p>Voir l’entreprise comme un système complet en lien avec un environnement mouvant ; poser un diagnostic avant d’agir, avec des outils concrets.</p></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC03</span>
+    <span class="ac-t"><span class="t">Analyser la situation financière d’une entreprise à partir des éléments de la comptabilité générale</span><div class="s">Jeu de simulation « Vélix » — états financiers</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Simulation Vélix : lire en profondeur les états financiers (bilans, comptes de résultat, indicateurs) pour décider investissements, trésorerie, rentabilité et dettes.</p></div><div class="bloc"><h4>Actions menées</h4><p>Analyse sur D1 à D5 : bilan actif/passif, capitaux propres et résultats nets, disponibilités et dettes, structure du capital, immobilisations/stocks/créances. Décisions : limiter les concours bancaires coûteux, réinvestir les excédents, optimiser stocks et créances.</p></div><div class="bloc"><h4>Résultats</h4><p>Situation financière nettement améliorée : résultat net de –75 260 € à +569 019 €, +1,1 M€ de capitaux propres en 5 périodes, endettement réduit. Capacité d’investissement et résilience renforcées.</p></div><div class="bloc"><h4>Points forts</h4><p>Lecture correcte des états de synthèse ; déduction d’indicateurs (rentabilité, liquidité, autonomie) ; usage des chiffres pour la stratégie.</p></div><div class="bloc"><h4>Axes d’amélioration</h4><p>Systématiser les ratios (CAF, BFR, autonomie financière) ; restituer en tableaux de bord visuels.</p></div><div class="bloc"><h4>Trace commentée</h4><p>Fichier « Compétence 3 » : bilans successifs avec indicateurs détaillés.</p></div><div class="bloc"><h4>Approche critique</h4><p>La comptabilité générale est un outil de pilotage : lire entre les lignes d’un bilan, détecter les signaux de risque, piloter sur plusieurs périodes. À approfondir (ratios, SIG).</p></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC04</span>
+    <span class="ac-t"><span class="t">Identifier les éléments pertinents nécessaires à la réalisation du projet</span><div class="s">Transversal — NutriGo, LAMA, Delightz</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Compétence mobilisée de façon transversale sur trois projets : NutriGo (alimentation fonctionnelle), LAMA Biscuits (SAÉ de création) et Delightz (luminaires + dispositif digital). Au-delà de l’idée, poser tous les fondements d’un développement réaliste.</p></div><div class="bloc"><h4>Actions menées</h4><p>Pour chacun, identification et organisation des éléments essentiels à la faisabilité : tendances et segments, contraintes sanitaires/légales, partenaires logistiques, ressources humaines et technologiques, statut juridique, besoins de financement, positionnement, modes de distribution, risques marché, UX et fonctionnalités, stratégie de contenu, suivi analytique, contraintes techniques.</p></div><div class="bloc"><h4>Résultats</h4><p>Projets cohérents, réalistes et techniquement réalisables ; obstacles anticipés (légaux, logistiques, budgétaires) ; choix adaptés aux besoins ; crédibilité accrue en présentation.</p></div><div class="bloc"><h4>Points forts</h4><p>Structurer un projet dès l’amorçage ; prise en compte du marché et de la réglementation ; réflexion sur les ressources nécessaires.</p></div><div class="bloc"><h4>Axes d’amélioration</h4><p>Formaliser cette phase (checklist, fiche projet) ; mieux anticiper retards et dépendance à un seul canal.</p></div><div class="bloc"><h4>Trace commentée</h4><p>Pas de livrable unique : NutriGo, LAMA et Delightz sont des traces transversales reposant sur une identification rigoureuse (marché, cible, ressources, contraintes, canaux).</p></div><div class="bloc"><h4>Approche critique</h4><p>Un bon concept ne suffit pas : c’est l’analyse des conditions de faisabilité qui transforme une idée en projet viable. Recenser facteurs clés, risques et contraintes avant de produire.</p></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC05</span>
+    <span class="ac-t"><span class="t">Contribuer à l’enrichissement d’un projet collectif</span><div class="s">Stage 2ᵉ année — ACD TC 2025 (IUT de Toulon)</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Stage de 2ᵉ année (2 mois) au département TC de l’IUT de Toulon : préparer et coordonner l’Assemblée des Chefs de Département TC 2025, événement national réunissant les responsables pédagogiques des TC de France.</p></div><div class="bloc"><h4>Actions menées</h4><p>Participation multidimensionnelle : création de supports visuels (cartes, carnets, affiches, signalétique), communication interne/externe (coordination des pôles, réunions de suivi, contenus pour l’émission vidéo), organisation terrain (répartition des guides, soutien logistique des temps forts) et co-construction de l’expérience visiteur (parcours guidé, carnet d’anecdotes illustré « Art &amp; Culture »).</p></div><div class="bloc"><h4>Résultats</h4><p>Événement sur trois jours réunissant des dizaines de participants : programme fluide et apprécié, supports cohérents et originaux, valorisation de l’identité toulonnaise, ambiance conviviale et professionnelle.</p></div><div class="bloc"><h4>Points forts</h4><p>Intégration fluide dans une équipe multidisciplinaire ; prise d’initiative (supports visuels, contenus) ; communication constante avec les pôles.</p></div><div class="bloc"><h4>Axes d’amélioration</h4><p>Anticiper les contraintes de dernière minute (météo) ; documenter les retours participants.</p></div><div class="bloc"><h4>Trace commentée</h4><p>Carnet d’anecdotes, affiches, images d’ambiance et émission vidéo témoignent d’un apport dépassant la simple exécution.</p></div><div class="bloc"><h4>Approche critique</h4><p>La réussite d’un événement collectif tient à l’harmonie des apports individuels — compétences graphiques, communication efficace et adaptabilité.</p></div></div>
+</details>
+</section><section class="comp">
+  <div class="comp-head">
+    <div class="titles"><p class="eyebrow">Compétence · Marketing digital</p><h3>Marketing digital</h3><p class="bandeau">Participer à la stratégie digitale</p></div>
+    <div style="display:flex;flex-direction:column;align-items:flex-end;gap:.6rem"><div class="level"><span class="level-label">Niveau</span><div class="level-dots"><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div><span class="tag-type spe">Spécifique parcours MDEBE</span></div>
+  </div>
+  <details class="ac">
+  <summary><span class="ac-no">AC01</span>
+    <span class="ac-t"><span class="t">Mobiliser des indicateurs de performance en fonction du volume et de la variété des données</span><div class="s">Projet « Delightz » — analyse concurrentielle digitale</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Projet Delightz (néons personnalisables) : manipuler de nombreux indicateurs marketing et de performance liés au trafic web, à l’engagement social et aux données marché.</p></div><div class="bloc"><h4>Actions menées</h4><p>Étude comparative de six concurrents (graphisme, navigation, offre, réseaux, tarifs), mesure de performance via PageSpeed Insights, observation de l’engagement (abonnés, fréquence, likes/commentaires) et identification des forces/faiblesses. Définition d’objectifs court/moyen/long terme appuyés par des KPI : taux de conversion, trafic organique, satisfaction client, croissance des ventes, coûts logistiques, expansion internationale.</p></div><div class="bloc"><h4>Résultats</h4><p>Vision claire du marché et des axes d’amélioration, segmentation des actions par temporalité, indicateurs clés à suivre pour ajuster la stratégie. Document opérationnel exploitable.</p></div><div class="bloc"><h4>Points forts</h4><p>Bonne sélection des données pertinentes ; analyse et synthèse stratégiques ; prise en compte logistique/marketing/financière.</p></div><div class="bloc"><h4>Axes d’amélioration</h4><p>Explorer davantage d’outils de visualisation (dashboards) ; ajouter des indicateurs comportementaux (heatmaps, taux de rebond).</p></div><div class="bloc"><h4>Trace commentée</h4><p>Livrable croisant données quantitatives (trafic, prix, abonnés) et qualitatives (ergonomie, branding, SEO).</p></div><div class="bloc"><h4>Approche critique</h4><p>Dans un environnement digital complexe, la pertinence des données prime sur leur quantité : choisir les bons indicateurs pour les bons objectifs est un levier stratégique.</p></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC02</span>
+    <span class="ac-t"><span class="t">Identifier les spécialités du marketing digital</span><div class="s">Oral stratégique MBAM — Red Bull</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Oral stratégique autour de Red Bull : construire une proposition complète de stratégie e-commerce explorant les spécialités du marketing digital (boutique en ligne, métavers, SEO, abonnements, NFTs, personnalisation).</p></div><div class="bloc"><h4>Actions menées</h4><p>Structuration d’une stratégie globale : boutique D2C, abonnements personnalisés, personnalisation produit ; logistique (livraison express, hubs) ; marketing expérientiel (gaming/e-sport, réalité augmentée, NFTs) ; acquisition/fidélisation (SEO, contenu, retargeting, Google/Meta Ads) ; suivi de performance (taux de conversion, panier moyen, rétention, tests A/B).</p></div><div class="bloc"><h4>Résultats</h4><p>Cartographie claire des spécialités du marketing digital et de leur complémentarité ; innovations audacieuses tout en intégrant les fondamentaux. Rendu apprécié pour sa richesse et sa structuration.</p></div><div class="bloc"><h4>Points forts</h4><p>Mobilisation des spécialités dans un cadre réaliste ; approche multicanale orientée performance ; intégration de technologies émergentes.</p></div><div class="bloc"><h4>Axes d’amélioration</h4><p>Approfondir certains aspects techniques (CRM, CMS) ; explorer des outils concrets (Shopify, PrestaShop, GA4).</p></div><div class="bloc"><h4>Trace commentée</h4><p>Livrable « Compétence 2 » : synthèse des spécialités, des fondamentaux (site, SEO, pub) aux options avancées (NFTs, abonnements, e-sport).</p></div><div class="bloc"><h4>Approche critique</h4><p>Dépasser la vision technique : chaque spécialité répond à un objectif (visibilité, engagement, fidélité, performance). Une stratégie performante repose sur la complémentarité des outils.</p></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC03</span>
+    <span class="ac-t"><span class="t">Utiliser un cahier des charges e-business</span><div class="s">Projet « DocLine » — téléconsultation médicale</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Projet de groupe DocLine : concevoir une plateforme de téléconsultation médicale et produire un cahier des charges structuré (technique, fonctionnel, visuel, stratégique, juridique).</p></div><div class="bloc"><h4>Actions menées</h4><p>Contribution à la rédaction et à la structuration : besoins fonctionnels et techniques (prise de RDV en ligne, profils patients/médecins, consultations vidéo sécurisées, navigation responsive), juridique et sécurité (RGPD, authentification forte, stockage sécurisé), identité et ergonomie (charte graphique, UX, accessibilité), marketing digital (réseaux, SEO, e-mailing), planification (échéancier par jalons, budget estimé 20 000 €, risques et mesures).</p></div><div class="bloc"><h4>Résultats</h4><p>Cahier des charges opérationnel pouvant servir de base à un prestataire (solution technique, développement, coûts/délais, conformité, UX). Tous les éléments-clés présents.</p></div><div class="bloc"><h4>Points forts</h4><p>Structuration d’un projet numérique complexe ; intégration technique/UX/légale/marketing ; document professionnalisant.</p></div><div class="bloc"><h4>Axes d’amélioration</h4><p>Gagner en précision sur les délais de développement ; ajouter des maquettes UX/UI plus poussées.</p></div><div class="bloc"><h4>Trace commentée</h4><p>Document « Compétence 3 » : formalisation d’un projet digital de A à Z (UX, juridique, performances, budget, coordination).</p></div><div class="bloc"><h4>Approche critique</h4><p>Le cahier des charges est un outil stratégique de cadrage et de pilotage, qui aligne tous les acteurs sur une même vision dès le départ.</p></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC04</span>
+    <span class="ac-t"><span class="t">Intégrer les spécialités du e-commerce</span><div class="s">Analyse stratégique — Amazon</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Cas d’analyse stratégique e-commerce centré sur Amazon : identifier et comprendre les spécialités propres au commerce électronique à partir d’un exemple emblématique.</p></div><div class="bloc"><h4>Actions menées</h4><p>Mise en évidence des piliers de la stratégie d’Amazon : expérience utilisateur (interface intuitive, moteur de recherche, recommandations, paiement en 1 clic, mobile), technique et logistique (marketplace, FBA, suivi temps réel, produits numériques), commercial et marketing (Prime, prix dynamique, Prime Day/Black Friday, avis, A+ Content), data marketing (machine learning, IA, omnicanal) et internationalisation (sites par pays, devises, traduction).</p></div><div class="bloc"><h4>Résultats</h4><p>Vision globale et détaillée du fonctionnement du e-commerce, leviers différenciants identifiés, analyse rigoureuse transposable à d’autres marques.</p></div><div class="bloc"><h4>Points forts</h4><p>Clarté de structuration et de synthèse ; couverture complète des fonctions e-commerce ; analyse transversale (technique, marketing, UX, logistique, data).</p></div><div class="bloc"><h4>Axes d’amélioration</h4><p>Approfondir les limites et risques du modèle Amazon ; proposer un benchmark comparatif avec d’autres plateformes.</p></div><div class="bloc"><h4>Trace commentée</h4><p>Livrable « Compétence 4 » : leviers spécifiques du commerce en ligne et leur fonctionnement, dans un document synthétique.</p></div><div class="bloc"><h4>Approche critique</h4><p>L’e-commerce repose sur un écosystème complexe (UX, logistique, marketing, technologie, relation client). Intégrer ces dimensions de manière cohérente est indispensable à une plateforme performante.</p></div></div>
+</details><details class="ac">
+  <summary><span class="ac-no">AC05</span>
+    <span class="ac-t"><span class="t">Respecter le processus logistique</span><div class="s">Stage 2ᵉ année — ACD TC 2025</div></span>
+    <span class="chev">›</span></summary>
+  <div class="ac-body"><div class="bloc"><h4>Contexte</h4><p>Stage de 2ᵉ année : pilotage logistique complet de l’Assemblée des Chefs de Département TC 2025, de la planification amont à la gestion des imprévus sur le terrain.</p></div><div class="bloc"><h4>Actions menées</h4><p>Préparation amont (hôtels partenaires, signalétique, transports, espaces d’accueil), production de supports (carnet illustré, visuels imprimables, site dédié), mise en place opérationnelle (répétitions, parcours guidé, logistique repas et gala, accueil et gestion des flux), suivi et coordination d’équipe (réunions inter-pôles, anticipation des imprévus, respect des jalons).</p></div><div class="bloc"><h4>Résultats</h4><p>Événement fluide : bonne coordination des équipes, supports professionnels, taux de satisfaction élevé. Processus logistique entièrement respecté.</p></div><div class="bloc"><h4>Points forts</h4><p>Rigueur sur le calendrier et les livrables ; action en amont, pendant et après ; coordination naturelle avec des équipes variées.</p></div><div class="bloc"><h4>Axes d’amélioration</h4><p>Anticiper davantage les plans B (météo, absences, matériel) ; formaliser des checklists partagées.</p></div><div class="bloc"><h4>Trace commentée</h4><p>Document « Compétence 5 » : étapes concrètes de l’organisation, des supports au pilotage terrain.</p></div><div class="bloc"><h4>Approche critique</h4><p>La logistique est un levier stratégique au même titre que la communication ou le marketing : fiabilité, fluidité et crédibilité d’un projet. À renforcer sur des contextes plus complexes.</p></div></div>
+</details>
+</section>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Stages</p><h2>Expériences en entreprise</h2></div>
+    <div class="grid-2"><div class="card"><h3>Stage 1ʳᵉ année — JOTT</h3><div class="meta">4 semaines • La Garde (83) • vente prêt-à-porter</div><p>Intégration de l’équipe de vente de JOTT (vêtements urbains, doudounes légères) : accueil, conseil et fidélisation de la clientèle, encaissements, mise en rayon et gestion du stock. Renforcement des compétences en relation client et vente-conseil face à une clientèle exigeante.</p></div><div class="card"><h3>Stage 2ᵉ année — IUT de Toulon (ACD TC 2025)</h3><div class="meta">8 semaines • La Garde (83) • communication &amp; événementiel</div><p>Stage à l’IUT autour de l’organisation de l’Assemblée des Chefs de Département TC 2025. Rôle polyvalent à dominante communication visuelle, logistique événementielle et gestion de projet : carnet d’anecdotes sur Toulon, émission télévisée, accueil des participants. Mise en pratique de la communication, de la coordination d’équipe et de la création graphique en contexte réel.</p></div></div>
+  </div>
+</section>
+
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <div class="brand" style="font-family:var(--disp);font-weight:800;font-size:1.1rem">Anatole Lodier</div>
+      <div style="margin-top:.4rem">BUT Techniques de Commercialisation — Parcours MDEBE<br>IUT de Toulon · Campus de La Garde</div>
+    </div>
+    <ul class="foot-nav"><li><a href="index.html">Accueil</a></li><li><a href="but1.html">BUT 1</a></li><li><a href="but2.html">BUT 2</a></li><li><a href="but3.html">BUT 3</a></li><li><a href="bilan.html">Bilan &amp; projet</a></li><li><a href="contact.html">Contact</a></li></ul>
+  </div>
+</footer>
+<script>// Menu mobile
+(function(){
+  var t=document.querySelector('.nav-toggle'),l=document.querySelector('.nav-links');
+  if(t&&l){t.addEventListener('click',function(){
+    var o=l.classList.toggle('open');
+    t.setAttribute('aria-expanded',o?'true':'false');
+  });}
+})();
+</script>
+</body>
+</html>
